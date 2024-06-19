@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.PackageManager;
 using UnityEngine;
 
 public class CtrAllBtn : MonoBehaviour
@@ -37,6 +38,32 @@ public class CtrAllBtn : MonoBehaviour
                 
                 ctrBtnChange.UnSelectedBtn(isFrist);
 
+            }
+        });
+        isFrist = false;
+    }
+
+    public void ClickBtn(string name)
+    {
+        if (!IsStart)
+        {
+            PopupWindow.GetComponent<CtrPopupWiindow>().StartScale();
+            BgPanel.GetComponent<CtrBgScale>().ClickBtnSCale();
+            IsStart = true;
+        }
+        BtnTransforms.ForEach(u =>
+        {
+            CtrBtnChange ctrBtnChange = u.GetComponent<CtrBtnChange>();
+
+            if (name == u.name)
+            {
+                int index = BtnTransforms.IndexOf(u);
+                ShowInFormations(index);
+                ctrBtnChange.SelectBtn();
+            }
+            else
+            {
+                ctrBtnChange.UnSelectedBtn(isFrist);
             }
         });
         isFrist = false;

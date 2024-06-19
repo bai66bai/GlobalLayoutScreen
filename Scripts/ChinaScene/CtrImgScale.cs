@@ -51,6 +51,7 @@ public class CtrImgScale : MonoBehaviour
         isZoomed = !isZoomed;
     }
 
+    public void Scale(string target) => StartCoroutine(AnimateZoom(target == "big" ? targetPosition : originalPosition, target == "big" ? targetSize : originalSize));
 
     private IEnumerator AnimateZoom( Vector2 targetPosition, Vector2 targetSize)
     {

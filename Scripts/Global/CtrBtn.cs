@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using UnityEditor.PackageManager;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -25,6 +26,24 @@ public class CtrBtn : MonoBehaviour
             int index = Btns.IndexOf(b);
 
             if (b.name == btn.name)
+            {
+                StartCoroutine(ChangeColorOverTime(textMeshProUGUIs[index], imageList[index], unSelectedColor, selectedColor, duration));
+            }
+            else
+            {
+                StartCoroutine(ChangeColorOverTime(textMeshProUGUIs[index], imageList[index], selectedColor, unSelectedColor, duration));
+            }
+        });
+    }
+
+    public void OnClickBtn(string name)
+    {
+
+        Btns.ForEach(b =>
+        {
+            int index = Btns.IndexOf(b);
+
+            if (b.name == name)
             {
                 StartCoroutine(ChangeColorOverTime(textMeshProUGUIs[index], imageList[index], unSelectedColor, selectedColor, duration));
             }
