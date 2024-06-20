@@ -24,7 +24,6 @@ public class CountryTcpMsgHandler : TCPMsgHandler
                 {
                     if (item.name == param)
                     {
-                        Debug.Log(param);
                         CtrImgScale targetCtr = item.GetComponentInChildren<CtrImgScale>();
                         targetCtr.OnClick();
                     }

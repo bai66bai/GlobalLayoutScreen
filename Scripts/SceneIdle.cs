@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class SceneIdle : MonoBehaviour
 {
-
+    public static bool ShouldReset = false;
     public float timeoutSeconds = 5; // 用户无操作的超时时间（秒）
     private float lastInteractionTime; // 记录最后操作时间
 
@@ -17,10 +17,11 @@ public class SceneIdle : MonoBehaviour
 
     void Update()
     {
-        // 检查是否有键盘输入或鼠标移动
-        if (Input.touchCount > 0)
+        // 检查是否有网络请求
+        if (ShouldReset)
         {
             ResetTimer();
+            ShouldReset = false;
         }
 
         // 检查是否超时
@@ -59,7 +60,7 @@ public class SceneIdle : MonoBehaviour
     }
 
     // 重置计时器
-    void ResetTimer()
+    public void ResetTimer()
     {
         lastInteractionTime = Time.time;
     }

@@ -3811,17 +3811,17 @@ PrefabInstance:
     - target: {fileID: 5997246011084782074, guid: b67cd987ee8d67741ad86bbbe679eeca,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 5997246011084782074, guid: b67cd987ee8d67741ad86bbbe679eeca,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 5997246011084782074, guid: b67cd987ee8d67741ad86bbbe679eeca,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 5997246011084782074, guid: b67cd987ee8d67741ad86bbbe679eeca,
         type: 3}

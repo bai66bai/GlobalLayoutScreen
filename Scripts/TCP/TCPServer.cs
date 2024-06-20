@@ -42,6 +42,7 @@ public class TCPServer : MonoBehaviour
 
                 // 处理客户端请求
                 StartCoroutine(HandleClient(tcpClient));
+
             }
             yield return null; // 避免阻塞
         }
@@ -55,9 +56,14 @@ public class TCPServer : MonoBehaviour
         while (!readTask.IsCompleted) // 等待读取完成
             yield return null;
 
+        // 打破Idle
+        SceneIdle.ShouldReset = true;
+        BreakIdle.BreakIdleSync();
+
         string request = Encoding.UTF8.GetString(buffer, 0, readTask.Result);
         Debug.Log("Received: " + request);
         tcpMsgHandler.OnMsg(request);
+
 
         // 发送响应
         string response = "Success";

@@ -23,10 +23,12 @@ public class LevelLoader : MonoBehaviour
     IEnumerator LoadLevel(string sceneName)
     {
         // 播放动画
-        animator.SetTrigger("StartTrigger");
+        if (animator != null)
+        {
+            animator.SetTrigger("StartTrigger");// 等待动画播放完成
+            yield return new WaitForSeconds(transitionTime);
+        }
 
-        // 等待动画播放完成
-        yield return new WaitForSeconds(transitionTime);
 
         LevelStore.LastSceneName = SceneManager.GetActiveScene().name;
 
