@@ -14,7 +14,10 @@ public  class TCPMsgHandler : MonoBehaviour
     {
         string[] splitMsg = msg.Split(":");
         if (splitMsg[0] == "loadScene")
+        {
             levelLoader.LoadNewScene(splitMsg[1]);
+            return;
+        }
         HandleMsg(msg);
     }
 }

@@ -57,8 +57,7 @@ public class TCPServer : MonoBehaviour
             yield return null;
 
         // ¥Ú∆∆Idle
-        SceneIdle.ShouldReset = true;
-        BreakIdle.BreakIdleSync();
+        IdleCtrl.BreakIdle();
 
         string request = Encoding.UTF8.GetString(buffer, 0, readTask.Result);
         Debug.Log("Received: " + request);
