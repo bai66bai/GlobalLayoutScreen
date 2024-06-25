@@ -7,12 +7,15 @@ using UnityEngine.Video;
 
 public class CtrVideo : MonoBehaviour
 {
+    public RenderTexture RenderTexture;
     public VideoPlayer videoPlayer;
     public string nextSceneName;
     public GameObject GameObject;
 
     void Start()
     {
+        RenderTexture.Release();
+
         if (videoPlayer == null)
         {
             videoPlayer = GetComponent<VideoPlayer>();
@@ -30,6 +33,11 @@ public class CtrVideo : MonoBehaviour
     void OnVideoFinished(VideoPlayer vp)
     {
         // 切换到下一个场景
-        SceneManager.LoadScene(nextSceneName);
+        SceneManager.LoadScene(nextSceneName);  
+    }
+
+    private void OnDisable()
+    {
+        RenderTexture.Release();
     }
 }
