@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -9,9 +10,21 @@ public class LevelLoader : MonoBehaviour
 
     public float transitionTime = 1f;
 
+    private TCPClient client;
+
+    private void Start()
+    {
+        client = GetComponent<TCPClient>();
+    }
+
+
+    public void LoadNewScene(string sceneName, bool shouldSend = true)
+    {
+        StartCoroutine(LoadLevel(sceneName, shouldSend));
+    }
     public void LoadNewScene(string sceneName)
     {
-        StartCoroutine(LoadLevel(sceneName));
+        StartCoroutine(LoadLevel(sceneName, true));
     }
 
     public void GoBack()
@@ -19,15 +32,16 @@ public class LevelLoader : MonoBehaviour
         LoadNewScene(LevelStore.LastSceneName);
     }
 
-    IEnumerator LoadLevel(string sceneName)
+    IEnumerator LoadLevel(string sceneName, bool shouldSend)
     {
-        // 播放动画
-        if (animator != null)
-        {
-            animator.SetTrigger("StartTrigger");// 等待动画播放完成
-            yield return new WaitForSeconds(transitionTime);
-        }
+        if (shouldSend && sceneName != "MenuScene")
+            client.SendMsg($"loadScene:{sceneName}");
 
+        // 播放动画
+        animator.SetTrigger("StartTrigger");
+
+        // 等待动画播放完成
+        yield return new WaitForSeconds(transitionTime);
 
         LevelStore.LastSceneName = SceneManager.GetActiveScene().name;
 
