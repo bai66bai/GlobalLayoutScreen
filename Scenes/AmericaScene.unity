@@ -6015,6 +6015,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: IdleVideo
       objectReference: {fileID: 0}
+    - target: {fileID: 1847214857974642969, guid: 338f5ca47cffb5f4fbb250c14b073c34,
+        type: 3}
+      propertyPath: IdleTime
+      value: 900
+      objectReference: {fileID: 0}
     - target: {fileID: 1847214857974642970, guid: 338f5ca47cffb5f4fbb250c14b073c34,
         type: 3}
       propertyPath: m_RootOrder

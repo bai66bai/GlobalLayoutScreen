@@ -238,8 +238,61 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5954357341867788819, guid: b67cd987ee8d67741ad86bbbe679eeca,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 612096726}
+    - targetCorrespondingSourceObject: {fileID: 5954357341867788819, guid: b67cd987ee8d67741ad86bbbe679eeca,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 612096733}
   m_SourcePrefab: {fileID: 100100000, guid: b67cd987ee8d67741ad86bbbe679eeca, type: 3}
+--- !u!1 &612096723 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5954357341867788819, guid: b67cd987ee8d67741ad86bbbe679eeca,
+    type: 3}
+  m_PrefabInstance: {fileID: 612096722}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &612096724 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3041061302705702435, guid: b67cd987ee8d67741ad86bbbe679eeca,
+    type: 3}
+  m_PrefabInstance: {fileID: 612096722}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 612096723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec78393e4f18a7e458b088dfd1530ead, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &612096726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 612096723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 537c79a6536a43b4889d3e4fc89650b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  port: 8686
+--- !u!114 &612096733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 612096723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd6c0852dc9afd249b6d4c7587dfcf56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CtrVideoPlayer: {fileID: 1233608959}
+  LevelLoader: {fileID: 612096724}
 --- !u!1001 &667649114
 PrefabInstance:
   m_ObjectHideFlags: 0

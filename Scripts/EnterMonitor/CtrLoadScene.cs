@@ -19,12 +19,11 @@ public class CtrLoadScene : MonoBehaviour
             {
                 LevelLoader.LoadNewScene(LoadScene);
                 isLoad = false;
-            }
+            } 
         }
     }
     public void StartDestroy(string name)
     {
-        
         VLCPlayerExample[] vLCPlayer1Examples = tempObject1.GetComponentsInChildren<VLCPlayerExample>();
         foreach (var item in vLCPlayer1Examples)
         {

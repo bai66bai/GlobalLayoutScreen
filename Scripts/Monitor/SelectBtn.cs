@@ -9,6 +9,6 @@ public class SelectBtn : MonoBehaviour
     public void TabSelect(int index)
     {
         TabStore.SelectedTab = index;
-        LevelLoader.LoadNewScene("EnterMonitorScene", false); 
+        LevelLoader.LoadNewScene("EnterMonitorScene"); 
     }
 }

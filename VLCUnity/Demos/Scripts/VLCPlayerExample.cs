@@ -41,6 +41,12 @@ public class VLCPlayerExample : MonoBehaviour
     //Unity Awake, OnDestroy, and Update functions
     #region unity
 
+    public bool HasLoaded
+    {
+        get => hasLoaded;
+        private set { }
+    }
+
     private bool hasLoaded = false;
     void Awake()
     {
