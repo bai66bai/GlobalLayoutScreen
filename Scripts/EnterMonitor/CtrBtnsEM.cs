@@ -106,6 +106,7 @@ public class CtrBtnsEM : MonoBehaviour
             }
             Contents[0].SetActive(true);
             Suzhou.GetComponent<CtrVideoPrefab>().LoadPrefabSync();
+            IsReleasingSuZhou = false;
             IsReleasingHangZhou = true;
         }
         else
@@ -119,6 +120,7 @@ public class CtrBtnsEM : MonoBehaviour
             Contents[1].SetActive(true);
            Hangzhou.GetComponent<CtrVideoPrefab>().LoadPrefabSync();
             IsReleasingSuZhou = true;
+            IsReleasingHangZhou = false;
         }
     }
 }
