@@ -18,11 +18,11 @@ public class CtrBtnChange : MonoBehaviour
     public TextMeshProUGUI UnSelectedText;
 
     public GameObject Label;
- 
 
-    private Vector2 UnSelectedtLocalScale = new(0.4f, 0.6f);
 
-    private Vector2 selectedtLocalScale;
+    public Vector2 UnSelectedtLocalScale = new(0.4f, 0.6f);
+
+    private Vector2 selectedtLocalScale = new(1f, 1f);
 
     private Vector3 selectedtLocalPosition;
 
@@ -34,26 +34,28 @@ public class CtrBtnChange : MonoBehaviour
 
     private bool isFinish = false;
 
+    //判断按钮的协程是否执行完毕
+    public bool ChangeFinish = true;
+
     private void Start()
     {
-
         Btn = transform.Find("Btn");
-        selectedtLocalScale = Btn.transform.localScale;
         selectedtLocalPosition = Btn.transform.localPosition;
         targetLocalPosition = new(Btn.localPosition.x, TargetY, 0);
         Labels = Label.GetComponentsInChildren<Image>();
     }
 
-    
 
-    public void SelectBtn()
+
+    public void SelectBtn(bool hasRecovered)
     {
         SelectedText.enabled = true;
         UnSelectedText.enabled = false;
-        Labels[0].enabled = true;
-        Labels[1].enabled = false;
+        Labels[0].enabled = hasRecovered;
+        Labels[1].enabled = !hasRecovered;
         isFinish = true;
         StartCoroutine(ChangeBtnActive(selectedtLocalScale, selectedtLocalPosition, SwitchingTime));
+        ChangeFinish = false;
     }
 
 
@@ -66,9 +68,10 @@ public class CtrBtnChange : MonoBehaviour
         UnSelectedText.enabled = true;
         float time = isFrist ? duration : SwitchingTime;
         StartCoroutine(ChangeBtnActive(UnSelectedtLocalScale, targetLocalPosition, time));
+        ChangeFinish = false;
     }
 
- 
+
 
 
     private IEnumerator ChangeBtnActive(Vector2 newlocalScale, Vector3 newlocalPosition, float time)
@@ -95,5 +98,6 @@ public class CtrBtnChange : MonoBehaviour
         }
         Btn.localScale = newlocalScale;
         Btn.localPosition = newlocalPosition;
+        ChangeFinish = true;
     }
 }

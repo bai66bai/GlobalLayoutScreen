@@ -29,6 +29,9 @@ public class CountryTcpMsgHandler : TCPMsgHandler
                     }
                 }
                 break;
+            case "operationName":
+                CtrAllBtn.CtrlRecovery();
+                break;
         }
 
     }

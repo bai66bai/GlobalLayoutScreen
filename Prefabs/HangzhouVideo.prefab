@@ -203,6 +203,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a54f68b0283bcfc408393ef8ebab9465, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isNeedAwakeStart: 1
   screen: {fileID: 0}
   canvasScreen: {fileID: 8453151865744424640}
   texture: {fileID: 0}
@@ -527,6 +528,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a54f68b0283bcfc408393ef8ebab9465, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isNeedAwakeStart: 1
   screen: {fileID: 0}
   canvasScreen: {fileID: 938712286513507207}
   texture: {fileID: 0}
@@ -683,6 +685,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a54f68b0283bcfc408393ef8ebab9465, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isNeedAwakeStart: 1
   screen: {fileID: 0}
   canvasScreen: {fileID: 5796420545831327117}
   texture: {fileID: 0}
@@ -911,6 +914,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a54f68b0283bcfc408393ef8ebab9465, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isNeedAwakeStart: 1
   screen: {fileID: 0}
   canvasScreen: {fileID: 2767426011476764980}
   texture: {fileID: 0}
@@ -1382,10 +1386,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a54f68b0283bcfc408393ef8ebab9465, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isNeedAwakeStart: 1
   screen: {fileID: 0}
   canvasScreen: {fileID: 633381649071984189}
   texture: {fileID: 0}
-  path: rtmp://liteavapp.qcloud.com/live/liteavdemoplayerstreamid
+  path: https://sf1-cdn-tos.huoshanstatic.com/obj/media-fe/xgplayer_doc_video/hls/xgplayer-demo.m3u8
   flipTextureX: 1
   flipTextureY: 1
   playOnAwake: 1
@@ -1664,6 +1669,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a54f68b0283bcfc408393ef8ebab9465, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isNeedAwakeStart: 1
   screen: {fileID: 0}
   canvasScreen: {fileID: 2525278397996140831}
   texture: {fileID: 0}
@@ -1820,6 +1826,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a54f68b0283bcfc408393ef8ebab9465, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isNeedAwakeStart: 1
   screen: {fileID: 0}
   canvasScreen: {fileID: 5108175953855044843}
   texture: {fileID: 0}
@@ -2109,6 +2116,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a54f68b0283bcfc408393ef8ebab9465, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isNeedAwakeStart: 1
   screen: {fileID: 0}
   canvasScreen: {fileID: 1854944600770575421}
   texture: {fileID: 0}
@@ -2481,6 +2489,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a54f68b0283bcfc408393ef8ebab9465, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isNeedAwakeStart: 1
   screen: {fileID: 0}
   canvasScreen: {fileID: 4897578224524904702}
   texture: {fileID: 0}
@@ -2859,10 +2868,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a54f68b0283bcfc408393ef8ebab9465, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isNeedAwakeStart: 1
   screen: {fileID: 0}
   canvasScreen: {fileID: 4276216333379274026}
   texture: {fileID: 0}
-  path: rtmp://liteavapp.qcloud.com/live/liteavdemoplayerstreamid
+  path: https://sf1-cdn-tos.huoshanstatic.com/obj/media-fe/xgplayer_doc_video/hls/xgplayer-demo.m3u8
   flipTextureX: 1
   flipTextureY: 1
   playOnAwake: 1
@@ -3378,10 +3388,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a54f68b0283bcfc408393ef8ebab9465, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isNeedAwakeStart: 1
   screen: {fileID: 0}
   canvasScreen: {fileID: 4345998937996760583}
   texture: {fileID: 0}
-  path: rtmp://liteavapp.qcloud.com/live/liteavdemoplayerstreamid
+  path: https://sf1-cdn-tos.huoshanstatic.com/obj/media-fe/xgplayer_doc_video/hls/xgplayer-demo.m3u8
   flipTextureX: 1
   flipTextureY: 1
   playOnAwake: 1
@@ -3534,6 +3545,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a54f68b0283bcfc408393ef8ebab9465, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isNeedAwakeStart: 1
   screen: {fileID: 0}
   canvasScreen: {fileID: 2336131219280578598}
   texture: {fileID: 0}
@@ -3943,6 +3955,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a54f68b0283bcfc408393ef8ebab9465, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isNeedAwakeStart: 1
   screen: {fileID: 0}
   canvasScreen: {fileID: 4523900615224029137}
   texture: {fileID: 0}
@@ -4099,6 +4112,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a54f68b0283bcfc408393ef8ebab9465, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isNeedAwakeStart: 1
   screen: {fileID: 0}
   canvasScreen: {fileID: 7374428338048291196}
   texture: {fileID: 0}
@@ -4255,6 +4269,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a54f68b0283bcfc408393ef8ebab9465, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isNeedAwakeStart: 1
   screen: {fileID: 0}
   canvasScreen: {fileID: 880788752448809901}
   texture: {fileID: 0}

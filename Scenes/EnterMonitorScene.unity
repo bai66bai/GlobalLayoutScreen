@@ -783,7 +783,6 @@ GameObject:
   - component: {fileID: 667284516}
   - component: {fileID: 667284515}
   - component: {fileID: 667284520}
-  - component: {fileID: 667284519}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -875,36 +874,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &667284519
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 667284514}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
 --- !u!222 &667284520
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -931,20 +900,26 @@ PrefabInstance:
       propertyPath: IdleTime
       value: 900
       objectReference: {fileID: 0}
+    - target: {fileID: 1847214857974642969, guid: 338f5ca47cffb5f4fbb250c14b073c34,
+        type: 3}
+      propertyPath: VlcPrefab
+      value: 
+      objectReference: {fileID: 8595790096796978930, guid: 3bd0a7adc6dbcbe43a02213067def86d,
+        type: 3}
     - target: {fileID: 1847214857974642970, guid: 338f5ca47cffb5f4fbb250c14b073c34,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1246.4302
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1847214857974642970, guid: 338f5ca47cffb5f4fbb250c14b073c34,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -45.73181
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1847214857974642970, guid: 338f5ca47cffb5f4fbb250c14b073c34,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -10.067406
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1847214857974642970, guid: 338f5ca47cffb5f4fbb250c14b073c34,
         type: 3}
@@ -1398,7 +1373,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 94d009410e116d844b8452fefcb9b30c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ff237de5ad991c0438b4fd4d3d7af629, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

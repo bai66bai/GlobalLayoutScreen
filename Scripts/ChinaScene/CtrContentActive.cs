@@ -10,15 +10,17 @@ public class CtrContentActive : MonoBehaviour
 
     public float moveDuration = 0.1f;// 移动持续时间
 
-    private Vector3 StartPosition = new Vector3(388f, 0f, 0f);
+    private Vector3 StartPosition = new Vector3(588f, 0f, 0f);
 
     private Vector3 EndPosition = new Vector3(0f, 0f, 0f);
 
+    public bool IsMoveEnd = false;
 
     void OnEnable()
     {
         StartMove();
-
+        IsMoveEnd = false;
+        CtrPopupWiindow.IsFinish = false;
     }
 
     public void StartMove()
@@ -60,6 +62,10 @@ public class CtrContentActive : MonoBehaviour
             yield return null;
         }
         obj.localPosition = targetPos; // 确保最后位置精确
+        if (Contents.IndexOf(obj) == Contents.Count - 1)
+        {
+            IsMoveEnd = true;
+        }
     }
 
 
@@ -72,3 +78,4 @@ public class CtrContentActive : MonoBehaviour
     }
 
 }
+

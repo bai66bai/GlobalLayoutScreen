@@ -9,7 +9,7 @@ public class CtrImgScale : MonoBehaviour
 
     public float duration = 0.5f;
 
-    private Vector2 targetSize = new(1066f, 600f);
+    private Vector2 targetSize = new(2200f, 937f);
 
     private Vector2 targetPosition;
 

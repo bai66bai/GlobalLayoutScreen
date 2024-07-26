@@ -1,42 +1,66 @@
+using System.Collections;
+using System.IO;
 using UnityEngine;
-using UnityEngine.Video;
+using UnityEngine.Networking;
+using UnityEngine.SceneManagement;
 
 public class IdleCtrl : MonoBehaviour
 {
-    public VideoClip IdleVideo;  // 公共变量，用于在Inspector中设置视频剪辑
+    //public VideoClip IdleVideo;  // 公共变量，用于在Inspector中设置视频剪辑
     public float IdleTime = 900f;
 
+    public GameObject VlcPrefab;
     private static GameObject VideoObj;
-    private VideoPlayer videoPlayer;  // 视频播放器组件的引用
+    private VLCPlayerExample vLCPlayerExample;  // 视频播放器组件的引用
     private static float baseTime = 0f;
-
+    private static bool shouldDestory = false;
+    private string IdleVideourl;
 
     void Start()
     {
-        // 获取这个GameObject或其子对象上的VideoPlayer组件
-        VideoObj = transform.GetChild(0).gameObject;
-        videoPlayer = VideoObj.GetComponent<VideoPlayer>();
+        InitVideo();
+    }
 
+
+    private void InitVideo()
+    {
+        VideoObj = Instantiate(VlcPrefab, transform);
+        VideoObj.transform.localPosition = Vector3.zero;
+        VideoObj.SetActive(false);
         // 检查是否成功获取VideoPlayer组件
-        if (videoPlayer == null)
+        if (!VideoObj.TryGetComponent(out vLCPlayerExample))
         {
             Debug.LogError("VideoPlayer component not found on the GameObject");
             return;
         }
-
-        // 设置VideoPlayer的视频剪辑
-        videoPlayer.clip = IdleVideo;
-
-        
-        VideoObj.SetActive(false);
     }
 
 
     void Update()
     {
-        if(Time.time - baseTime > IdleTime && !VideoObj.activeSelf)
+        if (VideoObj != null && !VideoObj.activeSelf
+            && Time.time - baseTime > IdleTime)
         {
+            // 第一次播放
             VideoObj.SetActive(true);
+            StartCoroutine(ReadFile());
+        } else if(VideoObj == null && SceneManager.GetActiveScene().name != "IdleScene")
+        {
+            InitVideo();
+        }
+
+        if (vLCPlayerExample != null
+            && vLCPlayerExample.mediaPlayer != null
+            && vLCPlayerExample.mediaPlayer.Time > vLCPlayerExample.mediaPlayer.Length - 1)
+        {
+            vLCPlayerExample.mediaPlayer.SetTime(0);
+        }
+
+        if(shouldDestory)
+        {
+            vLCPlayerExample.DestroyMediaPlayer();
+            Destroy(VideoObj);
+            shouldDestory = false;
         }
     }
 
@@ -46,7 +70,26 @@ public class IdleCtrl : MonoBehaviour
     public static void BreakIdle()
     {
         baseTime = Time.time;
-        VideoObj?.SetActive(false);
+        shouldDestory = true;
     }
 
+
+    IEnumerator ReadFile()
+    {
+        string filePath = Path.Combine(Application.streamingAssetsPath, "a.mp4");
+
+        UnityWebRequest www = UnityWebRequest.Get(filePath);
+        yield return www.SendWebRequest();
+
+        if (www.result == UnityWebRequest.Result.Success)
+        {
+            IdleVideourl = filePath;
+            // 设置VideoPlayer的视频剪辑
+            vLCPlayerExample.StartVideoWithUrlAsync(IdleVideourl);
+        }
+        else
+        {
+            Debug.LogError("加载失败： " + www.error);
+        }
+    }
 }

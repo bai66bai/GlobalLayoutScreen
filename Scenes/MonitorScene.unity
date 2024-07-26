@@ -311,20 +311,26 @@ PrefabInstance:
       propertyPath: IdleTime
       value: 900
       objectReference: {fileID: 0}
+    - target: {fileID: 1847214857974642969, guid: 338f5ca47cffb5f4fbb250c14b073c34,
+        type: 3}
+      propertyPath: VlcPrefab
+      value: 
+      objectReference: {fileID: 8595790096796978930, guid: 3bd0a7adc6dbcbe43a02213067def86d,
+        type: 3}
     - target: {fileID: 1847214857974642970, guid: 338f5ca47cffb5f4fbb250c14b073c34,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1246.4302
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1847214857974642970, guid: 338f5ca47cffb5f4fbb250c14b073c34,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -45.73181
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1847214857974642970, guid: 338f5ca47cffb5f4fbb250c14b073c34,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -10.067406
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1847214857974642970, guid: 338f5ca47cffb5f4fbb250c14b073c34,
         type: 3}
@@ -511,7 +517,7 @@ VideoPlayer:
   m_ControlledAudioTrackCount: 1
   m_PlayOnAwake: 1
   m_SkipOnDrop: 1
-  m_Looping: 1
+  m_Looping: 0
   m_WaitForFirstFrame: 1
   m_FrameReadyEventEnabled: 0
   m_VideoShaders: []
@@ -564,6 +570,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   videoPlayer: {fileID: 1233608956}
   controlButton: {fileID: 1288970468}
+  RenderTexture: {fileID: 8400000, guid: fa3c021155991e4418454eb4ee6da33f, type: 2}
 --- !u!1 &1288970468
 GameObject:
   m_ObjectHideFlags: 0
@@ -916,8 +923,8 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1288970469}
-  - {fileID: 667649115}
   - {fileID: 1626605641}
+  - {fileID: 667649115}
   m_Father: {fileID: 557867478}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
