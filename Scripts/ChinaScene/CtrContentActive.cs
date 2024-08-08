@@ -13,7 +13,7 @@ public class CtrContentActive : MonoBehaviour
     private Vector3 StartPosition = new Vector3(588f, 0f, 0f);
 
     private Vector3 EndPosition = new Vector3(0f, 0f, 0f);
-
+    public CtrImgScale ctrImgScale;
     public bool IsMoveEnd = false;
 
     void OnEnable()
@@ -71,10 +71,13 @@ public class CtrContentActive : MonoBehaviour
 
     private void OnDisable()
     {
-        Contents.ForEach(u =>
+        if (!ctrImgScale.isZoomed)
         {
-            u.localPosition = StartPosition;
-        });
+            Contents.ForEach(u =>
+            {
+                u.localPosition = StartPosition;
+            });
+        }
     }
 
 }

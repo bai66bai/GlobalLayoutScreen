@@ -1081,14 +1081,19 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4051185573270118842, guid: 338f5ca47cffb5f4fbb250c14b073c34,
+        type: 3}
+      propertyPath: IdleTime
+      value: 900
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 338f5ca47cffb5f4fbb250c14b073c34, type: 3}
---- !u!4 &514921768 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1847214857974642970, guid: 338f5ca47cffb5f4fbb250c14b073c34,
+--- !u!224 &514921768 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 7122051751217491005, guid: 338f5ca47cffb5f4fbb250c14b073c34,
     type: 3}
   m_PrefabInstance: {fileID: 514921767}
   m_PrefabAsset: {fileID: 0}
@@ -1481,6 +1486,7 @@ MonoBehaviour:
   - {fileID: 2019207456}
   interval: 0.15
   moveDuration: 0.1
+  ctrImgScale: {fileID: 1114762857}
   IsMoveEnd: 0
 --- !u!1 &890999129
 GameObject:
@@ -2329,6 +2335,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7408d1df3fbe58f4f9565a57210c3e96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isZoomed: 0
   duration: 0.2
 --- !u!114 &1114762858
 MonoBehaviour:

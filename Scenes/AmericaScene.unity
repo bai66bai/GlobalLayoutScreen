@@ -1974,6 +1974,7 @@ MonoBehaviour:
   - {fileID: 1448996750}
   interval: 0.15
   moveDuration: 0.1
+  ctrImgScale: {fileID: 2092882096}
   IsMoveEnd: 0
 --- !u!1 &707483334
 GameObject:
@@ -2499,6 +2500,7 @@ MonoBehaviour:
   - {fileID: 2019207456}
   interval: 0.15
   moveDuration: 0.1
+  ctrImgScale: {fileID: 1114762857}
   IsMoveEnd: 0
 --- !u!1 &866400742
 GameObject:
@@ -3560,6 +3562,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7408d1df3fbe58f4f9565a57210c3e96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isZoomed: 0
   duration: 0.2
 --- !u!114 &1114762858
 MonoBehaviour:
@@ -6095,9 +6098,9 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 338f5ca47cffb5f4fbb250c14b073c34, type: 3}
---- !u!4 &1757071849 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1847214857974642970, guid: 338f5ca47cffb5f4fbb250c14b073c34,
+--- !u!224 &1757071849 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 7122051751217491005, guid: 338f5ca47cffb5f4fbb250c14b073c34,
     type: 3}
   m_PrefabInstance: {fileID: 1757071848}
   m_PrefabAsset: {fileID: 0}
@@ -7226,6 +7229,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7408d1df3fbe58f4f9565a57210c3e96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isZoomed: 0
   duration: 0.2
 --- !u!114 &2092882097
 MonoBehaviour:

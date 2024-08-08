@@ -5,7 +5,7 @@ public class CtrImgScale : MonoBehaviour
 {
 
 
-    private bool isZoomed = false;  
+    public bool isZoomed = false;  
 
     public float duration = 0.5f;
 

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Net;
 using System.Net.Sockets;
 using System.Text;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class TCPServer : MonoBehaviour
@@ -61,7 +62,8 @@ public class TCPServer : MonoBehaviour
 
         string request = Encoding.UTF8.GetString(buffer, 0, readTask.Result);
         Debug.Log("Received: " + request);
-        tcpMsgHandler.OnMsg(request);
+       if (request != "break")
+         tcpMsgHandler.OnMsg(request);
 
 
         // ∑¢ÀÕœÏ”¶
