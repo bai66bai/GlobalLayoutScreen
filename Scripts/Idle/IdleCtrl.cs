@@ -38,6 +38,7 @@ public class IdleCtrl : MonoBehaviour
 
     void Update()
     {
+
         if (VideoObj != null && !VideoObj.activeSelf
             && Time.time - baseTime > IdleTime)
         {
