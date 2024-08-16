@@ -10,7 +10,7 @@ public class CtrContentActive : MonoBehaviour
 
     public float moveDuration = 0.1f;// 移动持续时间
 
-    private Vector3 StartPosition = new Vector3(588f, 0f, 0f);
+    private Vector3 StartPosition = new Vector3(710f, 0f, 0f);
 
     private Vector3 EndPosition = new Vector3(0f, 0f, 0f);
     public CtrImgScale ctrImgScale;

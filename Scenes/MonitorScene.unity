@@ -372,9 +372,9 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 338f5ca47cffb5f4fbb250c14b073c34, type: 3}
---- !u!4 &667649115 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1847214857974642970, guid: 338f5ca47cffb5f4fbb250c14b073c34,
+--- !u!224 &667649115 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 7122051751217491005, guid: 338f5ca47cffb5f4fbb250c14b073c34,
     type: 3}
   m_PrefabInstance: {fileID: 667649114}
   m_PrefabAsset: {fileID: 0}
@@ -570,7 +570,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   videoPlayer: {fileID: 1233608956}
   controlButton: {fileID: 1288970468}
-  RenderTexture: {fileID: 8400000, guid: fa3c021155991e4418454eb4ee6da33f, type: 2}
 --- !u!1 &1288970468
 GameObject:
   m_ObjectHideFlags: 0
@@ -727,7 +726,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

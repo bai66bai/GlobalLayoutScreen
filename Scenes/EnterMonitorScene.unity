@@ -961,9 +961,9 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 338f5ca47cffb5f4fbb250c14b073c34, type: 3}
---- !u!4 &1042951431 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1847214857974642970, guid: 338f5ca47cffb5f4fbb250c14b073c34,
+--- !u!224 &1042951431 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 7122051751217491005, guid: 338f5ca47cffb5f4fbb250c14b073c34,
     type: 3}
   m_PrefabInstance: {fileID: 1042951430}
   m_PrefabAsset: {fileID: 0}
@@ -1373,7 +1373,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: ff237de5ad991c0438b4fd4d3d7af629, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8c59928ecc2e9e8439c64bf876ab7ace, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
