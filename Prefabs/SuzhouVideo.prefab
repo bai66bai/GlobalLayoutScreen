@@ -164,7 +164,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a54f68b0283bcfc408393ef8ebab9465, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isNeedAwakeStart: 1
+  isNeedAwakeLoad: 1
+  isNeedAwakePause: 1
   screen: {fileID: 0}
   canvasScreen: {fileID: 9069403031539548905}
   texture: {fileID: 0}
@@ -321,7 +322,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a54f68b0283bcfc408393ef8ebab9465, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isNeedAwakeStart: 1
+  isNeedAwakeLoad: 1
+  isNeedAwakePause: 1
   screen: {fileID: 0}
   canvasScreen: {fileID: 4909787016695488481}
   texture: {fileID: 0}
@@ -697,7 +699,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a54f68b0283bcfc408393ef8ebab9465, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isNeedAwakeStart: 1
+  isNeedAwakeLoad: 1
+  isNeedAwakePause: 1
   screen: {fileID: 0}
   canvasScreen: {fileID: 207708771499829927}
   texture: {fileID: 0}
@@ -854,7 +857,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a54f68b0283bcfc408393ef8ebab9465, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isNeedAwakeStart: 1
+  isNeedAwakeLoad: 1
+  isNeedAwakePause: 1
   screen: {fileID: 0}
   canvasScreen: {fileID: 1220307459191011011}
   texture: {fileID: 0}
@@ -1155,7 +1159,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a54f68b0283bcfc408393ef8ebab9465, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isNeedAwakeStart: 1
+  isNeedAwakeLoad: 1
+  isNeedAwakePause: 1
   screen: {fileID: 0}
   canvasScreen: {fileID: 8663259515299444741}
   texture: {fileID: 0}
@@ -1456,7 +1461,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a54f68b0283bcfc408393ef8ebab9465, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isNeedAwakeStart: 1
+  isNeedAwakeLoad: 1
+  isNeedAwakePause: 1
   screen: {fileID: 0}
   canvasScreen: {fileID: 3641053124503891107}
   texture: {fileID: 0}
@@ -1535,6 +1541,7 @@ GameObject:
   - component: {fileID: 6201469074481936453}
   - component: {fileID: 7168923597138941575}
   - component: {fileID: 4322816018744258478}
+  - component: {fileID: 5647615058331553483}
   - component: {fileID: 34298032099947142}
   m_Layer: 5
   m_Name: V1Picture2
@@ -1613,11 +1620,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a54f68b0283bcfc408393ef8ebab9465, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isNeedAwakeStart: 1
+  isNeedAwakeLoad: 1
+  isNeedAwakePause: 0
   screen: {fileID: 0}
   canvasScreen: {fileID: 1349795010734204116}
   texture: {fileID: 0}
-  path: rtmp://liteavapp.qcloud.com/live/liteavdemoplayerstreamid
+  path: rtsp://admin:WRS123321@192.168.3.214:554/Streaming/Channels/102
   flipTextureX: 1
   flipTextureY: 1
   playOnAwake: 1
@@ -1665,6 +1673,18 @@ MonoBehaviour:
             m_StringArgument: V1Picture2
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &5647615058331553483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2905644400764010785}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1e666a60d2525e4b89af2ade9f2a4a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &34298032099947142
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1770,7 +1790,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a54f68b0283bcfc408393ef8ebab9465, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isNeedAwakeStart: 1
+  isNeedAwakeLoad: 1
+  isNeedAwakePause: 1
   screen: {fileID: 0}
   canvasScreen: {fileID: 637398281207738391}
   texture: {fileID: 0}
@@ -2253,7 +2274,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a54f68b0283bcfc408393ef8ebab9465, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isNeedAwakeStart: 1
+  isNeedAwakeLoad: 1
+  isNeedAwakePause: 1
   screen: {fileID: 0}
   canvasScreen: {fileID: 5166079934655562117}
   texture: {fileID: 0}
@@ -2578,7 +2600,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a54f68b0283bcfc408393ef8ebab9465, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isNeedAwakeStart: 1
+  isNeedAwakeLoad: 1
+  isNeedAwakePause: 1
   screen: {fileID: 0}
   canvasScreen: {fileID: 1756577002578158979}
   texture: {fileID: 0}
@@ -2735,7 +2758,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a54f68b0283bcfc408393ef8ebab9465, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isNeedAwakeStart: 1
+  isNeedAwakeLoad: 1
+  isNeedAwakePause: 1
   screen: {fileID: 0}
   canvasScreen: {fileID: 5022956308965038250}
   texture: {fileID: 0}
@@ -2964,7 +2988,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a54f68b0283bcfc408393ef8ebab9465, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isNeedAwakeStart: 1
+  isNeedAwakeLoad: 1
+  isNeedAwakePause: 1
   screen: {fileID: 0}
   canvasScreen: {fileID: 2124847379071577464}
   texture: {fileID: 0}
@@ -3121,7 +3146,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a54f68b0283bcfc408393ef8ebab9465, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isNeedAwakeStart: 1
+  isNeedAwakeLoad: 1
+  isNeedAwakePause: 1
   screen: {fileID: 0}
   canvasScreen: {fileID: 4312336372438006604}
   texture: {fileID: 0}
@@ -3278,7 +3304,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a54f68b0283bcfc408393ef8ebab9465, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isNeedAwakeStart: 1
+  isNeedAwakeLoad: 1
+  isNeedAwakePause: 1
   screen: {fileID: 0}
   canvasScreen: {fileID: 1765111526386812004}
   texture: {fileID: 0}
@@ -3824,7 +3851,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a54f68b0283bcfc408393ef8ebab9465, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isNeedAwakeStart: 1
+  isNeedAwakeLoad: 1
+  isNeedAwakePause: 1
   screen: {fileID: 0}
   canvasScreen: {fileID: 8301745947826444795}
   texture: {fileID: 0}

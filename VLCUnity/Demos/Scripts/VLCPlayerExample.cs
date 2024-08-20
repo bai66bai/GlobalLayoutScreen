@@ -20,7 +20,8 @@ public class VLCPlayerExample : MonoBehaviour
 {
     public static LibVLC libVLC; //The LibVLC class is mainly used for making MediaPlayer and Media objects. You should only have one LibVLC instance.
     public MediaPlayer mediaPlayer; //MediaPlayer is the main class we use to interact with VLC
-    public bool isNeedAwakeStart = true;
+    public bool isNeedAwakeLoad = true;
+    public bool isNeedAwakePause = false;
     public bool IsMediaPlaying
     {
         get
@@ -59,7 +60,7 @@ public class VLCPlayerExample : MonoBehaviour
     private bool hasLoaded = false;
     void Awake()
     {
-        if (isNeedAwakeStart)
+        if (isNeedAwakeLoad)
             StartCoroutine(StartVideo());
     }
 
@@ -178,7 +179,10 @@ public class VLCPlayerExample : MonoBehaviour
 
         var trimmedPath = path.Trim(new char[] { '"' });//Windows likes to copy paths with quotes but Uri does not like to open them
         mediaPlayer.Media = new Media(new Uri(trimmedPath));
-        Play();
+        if(!isNeedAwakePause)
+        {
+            Play();
+        }
     }
 
     public void OpenUrl(string url)
@@ -195,7 +199,6 @@ public class VLCPlayerExample : MonoBehaviour
     public void Play()
     {
         Log("VLCPlayerExample Play");
-
         mediaPlayer.Play();
     }
 
@@ -205,6 +208,17 @@ public class VLCPlayerExample : MonoBehaviour
         mediaPlayer.Pause();
     }
 
+    public void Resume()
+    {
+        if (mediaPlayer != null)
+        {
+            ReleaseCache();
+            // 重新加载媒体以确保缓存被清空
+            mediaPlayer.Media.AddOption(":network-caching=3000");
+            mediaPlayer.Play();
+        }
+    }
+
     public void Stop()
     {
         Log("VLCPlayerExample Stop");
@@ -212,6 +226,18 @@ public class VLCPlayerExample : MonoBehaviour
 
         _vlcTexture = null;
         texture = null;
+    }
+
+    private void ReleaseCache()
+    {
+        if (mediaPlayer != null)
+        {
+            // 重新加载当前媒体来释放缓存
+            var trimmedPath = path.Trim(new char[] { '"' });
+            var media = new Media(new Uri(trimmedPath));
+            mediaPlayer.Media = media;
+            media.Dispose();
+        }
     }
 
     public void Seek(long timeDelta)
