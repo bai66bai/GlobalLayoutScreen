@@ -42,7 +42,7 @@ public class CtrContentActive : MonoBehaviour
             float t = actionTime / interval;
             float actionPosition = StartPosition.x;
             StartCoroutine(MoveObject(Contents[i], EndPosition));
-            yield return new WaitForSeconds(interval);
+            yield return null;
         }
     }
 
