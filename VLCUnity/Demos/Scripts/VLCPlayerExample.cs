@@ -205,7 +205,7 @@ public class VLCPlayerExample : MonoBehaviour
     public void Pause()
     {
         Log("VLCPlayerExample Pause");
-        mediaPlayer.Pause();
+        mediaPlayer.Stop();
     }
 
     public void Resume()
@@ -233,6 +233,7 @@ public class VLCPlayerExample : MonoBehaviour
         if (mediaPlayer != null)
         {
             // 重新加载当前媒体来释放缓存
+            mediaPlayer.Media?.Dispose();
             var trimmedPath = path.Trim(new char[] { '"' });
             var media = new Media(new Uri(trimmedPath));
             mediaPlayer.Media = media;

@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 
@@ -10,6 +11,10 @@ public class SwipeDetection : MonoBehaviour
 
     public Turnthepage Turnthepage;
 
+    public List<MonitorVlcCtrl> MonitorVlcCtrls;
+
+    private MonitorVlcCtrl currentVlcCtrl;
+
     private bool isFinish = true;
     [HideInInspector] public int bigIndex; //最大滑动次数
 
@@ -19,10 +24,7 @@ public class SwipeDetection : MonoBehaviour
     {
         float width = swipeArea.rect.width;
         bigIndex = (int)width / MovingDistance;
-
     }
-
-   
 
 
     public void ToRight()
@@ -35,6 +37,7 @@ public class SwipeDetection : MonoBehaviour
             --nowIndex;
             Turnthepage.ChangeBtnColor(nowIndex);
             isFinish = false;
+            CtrlVideoPauseAndPlay();
         }
     }
 
@@ -49,6 +52,31 @@ public class SwipeDetection : MonoBehaviour
             ++nowIndex;
             Turnthepage.ChangeBtnColor(nowIndex);
             isFinish = false;
+            CtrlVideoPauseAndPlay();
+        }
+    }
+
+    private void CtrlVideoPauseAndPlay()
+    {
+        if(currentVlcCtrl != null)
+        {
+            foreach (var vLCPlayerExample in currentVlcCtrl.vLCPlayerExamples)
+            {
+                vLCPlayerExample.Pause();
+            }
+        }
+
+        foreach (var monitorVlcCtrl in MonitorVlcCtrls)
+        {
+            if(nowIndex == monitorVlcCtrl.index)
+            {
+                currentVlcCtrl = monitorVlcCtrl;
+                foreach (var vLCPlayerExample in currentVlcCtrl.vLCPlayerExamples)
+                {
+                    vLCPlayerExample.Resume();
+                }
+                break;
+            }
         }
     }
 

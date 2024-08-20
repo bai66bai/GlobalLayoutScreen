@@ -61,7 +61,7 @@ public class TCPServer : MonoBehaviour
         IdleCtrl.BreakIdle();
 
         string request = Encoding.UTF8.GetString(buffer, 0, readTask.Result);
-        Debug.Log("Received: " + request);
+        //Debug.Log("Received: " + request);
        if (request != "break")
          tcpMsgHandler.OnMsg(request);
 

@@ -19,21 +19,21 @@ public class TestVlc : MonoBehaviour
     void Update()
     {
         count++;
-        if(count > 500 && !isPlay)
+        if(count > 2500 && !isPlay)
         {
             vLCPlayerExample.Play();
             isPlay = true;
             Debug.Log(1);
         }
 
-        if(count > 1500 && !isPause)
+        if(count > 5000 && !isPause)
         {
-            vLCPlayerExample.mediaPlayer.Pause();
+            vLCPlayerExample.Pause();
             isPause = true;
             Debug.Log(2);
         }
 
-        if(count > 2500 && !isSecondPlay)
+        if(count > 7500 && !isSecondPlay)
         {
             vLCPlayerExample.Resume();
             isSecondPlay = true;

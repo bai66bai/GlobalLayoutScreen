@@ -31,6 +31,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3188505110790939014}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -108,6 +109,7 @@ RectTransform:
   m_Children:
   - {fileID: 1219032904868287798}
   m_Father: {fileID: 4974902406318590522}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -169,7 +171,7 @@ MonoBehaviour:
   screen: {fileID: 0}
   canvasScreen: {fileID: 9069403031539548905}
   texture: {fileID: 0}
-  path: rtmp://liteavapp.qcloud.com/live/liteavdemoplayerstreamid
+  path: rtsp://admin:WRS123321@192.168.3.214:554/Streaming/Channels/502
   flipTextureX: 1
   flipTextureY: 1
   playOnAwake: 1
@@ -266,6 +268,7 @@ RectTransform:
   m_Children:
   - {fileID: 1311124117845022954}
   m_Father: {fileID: 4990449404380035005}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -327,7 +330,7 @@ MonoBehaviour:
   screen: {fileID: 0}
   canvasScreen: {fileID: 4909787016695488481}
   texture: {fileID: 0}
-  path: rtmp://liteavapp.qcloud.com/live/liteavdemoplayerstreamid
+  path: rtsp://admin:WRS123321@192.168.3.214:554/Streaming/Channels/502
   flipTextureX: 1
   flipTextureY: 1
   playOnAwake: 1
@@ -419,6 +422,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4056841407310069809}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -494,6 +498,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3396738948529729498}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -566,6 +571,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1471563934723212555}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -643,6 +649,7 @@ RectTransform:
   m_Children:
   - {fileID: 1967663779221622917}
   m_Father: {fileID: 4990449404380035005}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -704,7 +711,7 @@ MonoBehaviour:
   screen: {fileID: 0}
   canvasScreen: {fileID: 207708771499829927}
   texture: {fileID: 0}
-  path: https://sf1-cdn-tos.huoshanstatic.com/obj/media-fe/xgplayer_doc_video/hls/xgplayer-demo.m3u8
+  path: rtsp://admin:WRS123321@192.168.3.214:554/Streaming/Channels/502
   flipTextureX: 1
   flipTextureY: 1
   playOnAwake: 1
@@ -801,6 +808,7 @@ RectTransform:
   m_Children:
   - {fileID: 7722073139361585138}
   m_Father: {fileID: 4974902406318590522}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -862,7 +870,7 @@ MonoBehaviour:
   screen: {fileID: 0}
   canvasScreen: {fileID: 1220307459191011011}
   texture: {fileID: 0}
-  path: rtmp://liteavapp.qcloud.com/live/liteavdemoplayerstreamid
+  path: rtsp://admin:WRS123321@192.168.3.214:554/Streaming/Channels/502
   flipTextureX: 1
   flipTextureY: 1
   playOnAwake: 1
@@ -954,6 +962,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2489555692644233945}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -1026,6 +1035,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1521626955482672980}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -1103,6 +1113,7 @@ RectTransform:
   m_Children:
   - {fileID: 2707142400589899062}
   m_Father: {fileID: 7528688781400991274}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1160,11 +1171,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isNeedAwakeLoad: 1
-  isNeedAwakePause: 1
+  isNeedAwakePause: 0
   screen: {fileID: 0}
   canvasScreen: {fileID: 8663259515299444741}
   texture: {fileID: 0}
-  path: http://www.w3school.com.cn/i/movie.mp4
+  path: rtsp://admin:WRS123321@192.168.3.214:554/Streaming/Channels/202
   flipTextureX: 1
   flipTextureY: 1
   playOnAwake: 1
@@ -1256,6 +1267,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4088721590896514852}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -1328,6 +1340,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1320625235860300440}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -1405,6 +1418,7 @@ RectTransform:
   m_Children:
   - {fileID: 821632895363610331}
   m_Father: {fileID: 7528688781400991274}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1462,11 +1476,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isNeedAwakeLoad: 1
-  isNeedAwakePause: 1
+  isNeedAwakePause: 0
   screen: {fileID: 0}
   canvasScreen: {fileID: 3641053124503891107}
   texture: {fileID: 0}
-  path: rtmp://liteavapp.qcloud.com/live/liteavdemoplayerstreamid
+  path: rtsp://admin:WRS123321@192.168.3.214:554/Streaming/Channels/402
   flipTextureX: 1
   flipTextureY: 1
   playOnAwake: 1
@@ -1541,7 +1555,6 @@ GameObject:
   - component: {fileID: 6201469074481936453}
   - component: {fileID: 7168923597138941575}
   - component: {fileID: 4322816018744258478}
-  - component: {fileID: 5647615058331553483}
   - component: {fileID: 34298032099947142}
   m_Layer: 5
   m_Name: V1Picture2
@@ -1564,6 +1577,7 @@ RectTransform:
   m_Children:
   - {fileID: 311337208274849348}
   m_Father: {fileID: 7528688781400991274}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1673,18 +1687,6 @@ MonoBehaviour:
             m_StringArgument: V1Picture2
             m_BoolArgument: 0
           m_CallState: 2
---- !u!114 &5647615058331553483
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2905644400764010785}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b1e666a60d2525e4b89af2ade9f2a4a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &34298032099947142
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1734,6 +1736,7 @@ RectTransform:
   m_Children:
   - {fileID: 4892658854234802264}
   m_Father: {fileID: 4974902406318590522}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1795,7 +1798,7 @@ MonoBehaviour:
   screen: {fileID: 0}
   canvasScreen: {fileID: 637398281207738391}
   texture: {fileID: 0}
-  path: rtmp://liteavapp.qcloud.com/live/liteavdemoplayerstreamid
+  path: rtsp://admin:WRS123321@192.168.3.214:554/Streaming/Channels/502
   flipTextureX: 1
   flipTextureY: 1
   playOnAwake: 1
@@ -1887,6 +1890,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4056841407310069809}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1965,6 +1969,7 @@ RectTransform:
   - {fileID: 3958729813608765661}
   - {fileID: 5653431285401344899}
   m_Father: {fileID: 547801630372582344}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2069,6 +2074,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5611999012575033909}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -2141,6 +2147,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2851837911914407327}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -2218,6 +2225,7 @@ RectTransform:
   m_Children:
   - {fileID: 37667102020132067}
   m_Father: {fileID: 4974902406318590522}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2279,7 +2287,7 @@ MonoBehaviour:
   screen: {fileID: 0}
   canvasScreen: {fileID: 5166079934655562117}
   texture: {fileID: 0}
-  path: https://sf1-cdn-tos.huoshanstatic.com/obj/media-fe/xgplayer_doc_video/hls/xgplayer-demo.m3u8
+  path: rtsp://admin:WRS123321@192.168.3.214:554/Streaming/Channels/502
   flipTextureX: 1
   flipTextureY: 1
   playOnAwake: 1
@@ -2374,6 +2382,7 @@ RectTransform:
   - {fileID: 3888218281708078534}
   - {fileID: 8617718462414505741}
   m_Father: {fileID: 547801630372582344}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2457,6 +2466,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4990449404380035005}
   - component: {fileID: 5333894661710356885}
+  - component: {fileID: 9012295418964431449}
   m_Layer: 5
   m_Name: Videos3
   m_TagString: Untagged
@@ -2482,6 +2492,7 @@ RectTransform:
   - {fileID: 3434785058021028845}
   - {fileID: 2384361005277135219}
   m_Father: {fileID: 2055283444022003858}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2508,6 +2519,25 @@ MonoBehaviour:
   - {fileID: 5675597947779046956}
   duration: 0
   VId: 3
+--- !u!114 &9012295418964431449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5174523942158734924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94bf8a0d4a6971940b543790cd1aee14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 2
+  vLCPlayerExamples:
+  - {fileID: 3758898746608383917}
+  - {fileID: 523286698163478945}
+  - {fileID: 6992426810884191034}
+  - {fileID: 1887430258355832061}
+  - {fileID: 3450261936462508738}
 --- !u!1 &5324018438888638851
 GameObject:
   m_ObjectHideFlags: 0
@@ -2544,6 +2574,7 @@ RectTransform:
   m_Children:
   - {fileID: 4603263291299975903}
   m_Father: {fileID: 4974902406318590522}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2605,7 +2636,7 @@ MonoBehaviour:
   screen: {fileID: 0}
   canvasScreen: {fileID: 1756577002578158979}
   texture: {fileID: 0}
-  path: rtmp://liteavapp.qcloud.com/live/liteavdemoplayerstreamid
+  path: rtsp://admin:WRS123321@192.168.3.214:554/Streaming/Channels/502
   flipTextureX: 1
   flipTextureY: 1
   playOnAwake: 1
@@ -2702,6 +2733,7 @@ RectTransform:
   m_Children:
   - {fileID: 3713753244174951847}
   m_Father: {fileID: 4990449404380035005}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2763,7 +2795,7 @@ MonoBehaviour:
   screen: {fileID: 0}
   canvasScreen: {fileID: 5022956308965038250}
   texture: {fileID: 0}
-  path: rtmp://liteavapp.qcloud.com/live/liteavdemoplayerstreamid
+  path: rtsp://admin:WRS123321@192.168.3.214:554/Streaming/Channels/502
   flipTextureX: 1
   flipTextureY: 1
   playOnAwake: 1
@@ -2855,6 +2887,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6550173027621050994}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -2932,6 +2965,7 @@ RectTransform:
   m_Children:
   - {fileID: 7228826152673082011}
   m_Father: {fileID: 4990449404380035005}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2993,7 +3027,7 @@ MonoBehaviour:
   screen: {fileID: 0}
   canvasScreen: {fileID: 2124847379071577464}
   texture: {fileID: 0}
-  path: rtmp://liteavapp.qcloud.com/live/liteavdemoplayerstreamid
+  path: rtsp://admin:WRS123321@192.168.3.214:554/Streaming/Channels/502
   flipTextureX: 1
   flipTextureY: 1
   playOnAwake: 1
@@ -3090,6 +3124,7 @@ RectTransform:
   m_Children:
   - {fileID: 7213491103427970756}
   m_Father: {fileID: 4990449404380035005}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3151,7 +3186,7 @@ MonoBehaviour:
   screen: {fileID: 0}
   canvasScreen: {fileID: 4312336372438006604}
   texture: {fileID: 0}
-  path: rtmp://liteavapp.qcloud.com/live/liteavdemoplayerstreamid
+  path: rtsp://admin:WRS123321@192.168.3.214:554/Streaming/Channels/502
   flipTextureX: 1
   flipTextureY: 1
   playOnAwake: 1
@@ -3248,6 +3283,7 @@ RectTransform:
   m_Children:
   - {fileID: 7006190878591062597}
   m_Father: {fileID: 7528688781400991274}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3305,11 +3341,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isNeedAwakeLoad: 1
-  isNeedAwakePause: 1
+  isNeedAwakePause: 0
   screen: {fileID: 0}
   canvasScreen: {fileID: 1765111526386812004}
   texture: {fileID: 0}
-  path: rtmp://liteavapp.qcloud.com/live/liteavdemoplayerstreamid
+  path: rtsp://admin:WRS123321@192.168.3.214:554/Streaming/Channels/302
   flipTextureX: 1
   flipTextureY: 1
   playOnAwake: 1
@@ -3401,6 +3437,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 192802730108269257}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3455,6 +3492,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7528688781400991274}
   - component: {fileID: 4809908483730163689}
+  - component: {fileID: 6700295048732488671}
   m_Layer: 5
   m_Name: Videos1
   m_TagString: Untagged
@@ -3480,6 +3518,7 @@ RectTransform:
   - {fileID: 3188505110790939014}
   - {fileID: 5611999012575033909}
   m_Father: {fileID: 2055283444022003858}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3506,6 +3545,25 @@ MonoBehaviour:
   - {fileID: 7844580129578423813}
   duration: 0
   VId: 1
+--- !u!114 &6700295048732488671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6208322406046789359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94bf8a0d4a6971940b543790cd1aee14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 0
+  vLCPlayerExamples:
+  - {fileID: 6003498370935521661}
+  - {fileID: 6201469074481936453}
+  - {fileID: 6599627651101719347}
+  - {fileID: 2554657316393455299}
+  - {fileID: 5042343375934268190}
 --- !u!1 &6578798470145522344
 GameObject:
   m_ObjectHideFlags: 0
@@ -3537,6 +3595,7 @@ RectTransform:
   - {fileID: 2055283444022003858}
   - {fileID: 547801630372582344}
   m_Father: {fileID: 0}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3574,6 +3633,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3434785058021028845}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -3646,6 +3706,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5204052755447158297}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -3718,6 +3779,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5790910959649153406}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -3795,6 +3857,7 @@ RectTransform:
   m_Children:
   - {fileID: 3396427782606483473}
   m_Father: {fileID: 7528688781400991274}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3852,11 +3915,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isNeedAwakeLoad: 1
-  isNeedAwakePause: 1
+  isNeedAwakePause: 0
   screen: {fileID: 0}
   canvasScreen: {fileID: 8301745947826444795}
   texture: {fileID: 0}
-  path: rtmp://liteavapp.qcloud.com/live/liteavdemoplayerstreamid
+  path: rtsp://admin:WRS123321@192.168.3.214:554/Streaming/Channels/502
   flipTextureX: 1
   flipTextureY: 1
   playOnAwake: 1
@@ -3927,6 +3990,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4974902406318590522}
   - component: {fileID: 5513368352178650232}
+  - component: {fileID: 7998017378762212061}
   m_Layer: 5
   m_Name: Videos2
   m_TagString: Untagged
@@ -3952,6 +4016,7 @@ RectTransform:
   - {fileID: 5790910959649153406}
   - {fileID: 3396738948529729498}
   m_Father: {fileID: 2055283444022003858}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3978,6 +4043,25 @@ MonoBehaviour:
   - {fileID: 3435530230098187652}
   duration: 0
   VId: 2
+--- !u!114 &7998017378762212061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8483420462233065465}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94bf8a0d4a6971940b543790cd1aee14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 1
+  vLCPlayerExamples:
+  - {fileID: 5995311859531667815}
+  - {fileID: 7436224684178572892}
+  - {fileID: 1898196916431449752}
+  - {fileID: 5123861581567021699}
+  - {fileID: 6348214946729311742}
 --- !u!1 &8578806928522039873
 GameObject:
   m_ObjectHideFlags: 0
@@ -4014,6 +4098,7 @@ RectTransform:
   - {fileID: 4974902406318590522}
   - {fileID: 4990449404380035005}
   m_Father: {fileID: 359553516971207287}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4074,6 +4159,10 @@ MonoBehaviour:
   duration: 0.5
   MovingDistance: 3953
   Turnthepage: {fileID: 6275998672865326605}
+  MonitorVlcCtrls:
+  - {fileID: 6700295048732488671}
+  - {fileID: 7998017378762212061}
+  - {fileID: 9012295418964431449}
   bigIndex: 0
   nowIndex: 0
 --- !u!114 &4508993248474123917
@@ -4121,6 +4210,7 @@ RectTransform:
   - {fileID: 192802730108269257}
   - {fileID: 4056841407310069809}
   m_Father: {fileID: 359553516971207287}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4174,6 +4264,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 192802730108269257}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4249,6 +4340,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2384361005277135219}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -4321,6 +4413,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8625957050310328236}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
