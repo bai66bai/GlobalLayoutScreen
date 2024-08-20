@@ -85,7 +85,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a54f68b0283bcfc408393ef8ebab9465, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isNeedAwakeStart: 0
+  isNeedAwakeLoad: 1
+  isNeedAwakePause: 0
   screen: {fileID: 0}
   canvasScreen: {fileID: 3605620498110564785}
   texture: {fileID: 0}
