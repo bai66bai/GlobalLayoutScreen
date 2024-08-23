@@ -1,3 +1,4 @@
+using LibVLCSharp;
 using System.Collections;
 using System.IO;
 using UnityEngine;
@@ -15,6 +16,8 @@ public class IdleCtrl : MonoBehaviour
     private static float baseTime = 0f;
     private static bool shouldDestory = false;
     private string IdleVideourl;
+
+    private bool isStop = false;
 
     void Start()
     {
@@ -51,13 +54,21 @@ public class IdleCtrl : MonoBehaviour
         }
 
         if (vLCPlayerExample != null
-            && vLCPlayerExample.mediaPlayer != null
-            && vLCPlayerExample.mediaPlayer.Time > vLCPlayerExample.mediaPlayer.Length - 1)
+            && vLCPlayerExample.mediaPlayer != null)
         {
-            vLCPlayerExample.mediaPlayer.SetTime(0);
+
+            if (vLCPlayerExample.mediaPlayer.State == VLCState.Stopping && !isStop)
+            {
+                isStop = true;
+                vLCPlayerExample.Resume();
+            }
+            else
+            {
+                isStop = false;
+            }
         }
 
-        if(shouldDestory)
+        if (shouldDestory)
         {
             vLCPlayerExample.DestroyMediaPlayer();
             Destroy(VideoObj);
@@ -85,6 +96,8 @@ public class IdleCtrl : MonoBehaviour
         if (www.result == UnityWebRequest.Result.Success)
         {
             IdleVideourl = filePath;
+            vLCPlayerExample.path = filePath;
+
             // …Ë÷√VideoPlayerµƒ ”∆µºÙº≠
             vLCPlayerExample.StartVideoWithUrlAsync(IdleVideourl);
         }
