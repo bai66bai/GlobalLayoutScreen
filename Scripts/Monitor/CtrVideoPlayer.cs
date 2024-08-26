@@ -45,4 +45,9 @@ public class CtrVideoPlayer : MonoBehaviour
     {
         pause.SetActive(state);
     }
+
+    public void CtrlStopVideo()
+    {
+        videoPlayer.Pause();
+    }
 }

@@ -1314,7 +1314,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 534.9, y: -201.5}
+  m_AnchoredPosition: {x: 719.3, y: -202.1}
   m_SizeDelta: {x: 43.41, y: 38.3534}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &740466968
@@ -2505,6 +2505,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isZoomed: 0
   duration: 0.2
+  targetSize: {x: 2200, y: 930}
+  targetPosition: {x: 2200, y: 930}
 --- !u!114 &1114762858
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4205,7 +4207,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: cd7ce33c5e7c30848bfcba1d9112e1b5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 074adb3c590da1749aaaeecfdefb269c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

@@ -456,6 +456,7 @@ GameObject:
   m_Component:
   - component: {fileID: 160633071}
   - component: {fileID: 160633072}
+  - component: {fileID: 160633073}
   m_Layer: 5
   m_Name: TabBtn
   m_TagString: Untagged
@@ -512,6 +513,19 @@ MonoBehaviour:
   - {fileID: 466693971}
   - {fileID: 1691413831}
   duration: 0.5
+--- !u!114 &160633073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 160633070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 000ab1bc653f46a42ad878228ff7fccb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 1927610378}
 --- !u!1 &241743110
 GameObject:
   m_ObjectHideFlags: 0
@@ -885,6 +899,18 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 160633073}
+          m_TargetAssemblyTypeName: TextDisableCtrl, Assembly-CSharp
+          m_MethodName: TextDisable
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!224 &474008655 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3306473430244125521, guid: b67cd987ee8d67741ad86bbbe679eeca,
@@ -937,7 +963,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 478120849}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 105810028bfe9d448ac12049f27411e8, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: fb0c7686c6aeb8c46994784a0a057cf4, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
@@ -951,14 +977,12 @@ VideoPlayer:
   m_TimeUpdateMode: 2
   m_PlaybackSpeed: 1
   m_AudioOutputMode: 2
-  m_TargetAudioSources:
-  - {fileID: 0}
-  m_DirectAudioVolumes:
-  - 1
+  m_TargetAudioSources: []
+  m_DirectAudioVolumes: []
   m_Url: 
-  m_EnabledAudioTracks: 01
-  m_DirectAudioMutes: 00
-  m_ControlledAudioTrackCount: 1
+  m_EnabledAudioTracks: 
+  m_DirectAudioMutes: 
+  m_ControlledAudioTrackCount: 0
   m_PlayOnAwake: 1
   m_SkipOnDrop: 1
   m_Looping: 0
@@ -1128,6 +1152,9 @@ MonoBehaviour:
   videoPlayer: {fileID: 478120851}
   nextSceneName: ChinaScene
   GameObject: {fileID: 560466361}
+  textMeshProUGUIs:
+  - {fileID: 1960000102}
+  - {fileID: 2103738214}
 --- !u!1 &569073542
 GameObject:
   m_ObjectHideFlags: 0
@@ -1513,6 +1540,9 @@ MonoBehaviour:
   videoPlayer: {fileID: 1555937915}
   nextSceneName: AmericaScene
   GameObject: {fileID: 677025653}
+  textMeshProUGUIs:
+  - {fileID: 1960000102}
+  - {fileID: 2103738214}
 --- !u!1 &722991634
 GameObject:
   m_ObjectHideFlags: 0
@@ -2547,6 +2577,9 @@ MonoBehaviour:
   videoPlayer: {fileID: 1453569803}
   nextSceneName: BritainScene
   GameObject: {fileID: 1415629280}
+  textMeshProUGUIs:
+  - {fileID: 1960000102}
+  - {fileID: 2103738214}
 --- !u!1 &1432133865
 GameObject:
   m_ObjectHideFlags: 0
@@ -2701,6 +2734,18 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 160633073}
+          m_TargetAssemblyTypeName: TextDisableCtrl, Assembly-CSharp
+          m_MethodName: TextDisable
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1449361616 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5954357341867788819, guid: b67cd987ee8d67741ad86bbbe679eeca,
@@ -2783,7 +2828,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1453569801}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: b638d665d946692438cc8c6690dc9258, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: fa3182c28fce82543af5cd75ab6661ce, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
@@ -2797,14 +2842,12 @@ VideoPlayer:
   m_TimeUpdateMode: 2
   m_PlaybackSpeed: 1
   m_AudioOutputMode: 2
-  m_TargetAudioSources:
-  - {fileID: 0}
-  m_DirectAudioVolumes:
-  - 1
+  m_TargetAudioSources: []
+  m_DirectAudioVolumes: []
   m_Url: 
-  m_EnabledAudioTracks: 01
-  m_DirectAudioMutes: 00
-  m_ControlledAudioTrackCount: 1
+  m_EnabledAudioTracks: 
+  m_DirectAudioMutes: 
+  m_ControlledAudioTrackCount: 0
   m_PlayOnAwake: 1
   m_SkipOnDrop: 1
   m_Looping: 0
@@ -2892,7 +2935,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1555937913}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: ec492b1fd8823c8459cad339d1c2c302, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 3c91e48264097f6489b1199894d9602e, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
@@ -2906,14 +2949,12 @@ VideoPlayer:
   m_TimeUpdateMode: 2
   m_PlaybackSpeed: 1
   m_AudioOutputMode: 2
-  m_TargetAudioSources:
-  - {fileID: 0}
-  m_DirectAudioVolumes:
-  - 1
+  m_TargetAudioSources: []
+  m_DirectAudioVolumes: []
   m_Url: 
-  m_EnabledAudioTracks: 01
-  m_DirectAudioMutes: 00
-  m_ControlledAudioTrackCount: 1
+  m_EnabledAudioTracks: 
+  m_DirectAudioMutes: 
+  m_ControlledAudioTrackCount: 0
   m_PlayOnAwake: 1
   m_SkipOnDrop: 1
   m_Looping: 0
@@ -3025,6 +3066,18 @@ MonoBehaviour:
         - m_Target: {fileID: 1415629282}
           m_TargetAssemblyTypeName: CtrVideo, Assembly-CSharp
           m_MethodName: OnLodeScene
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 160633073}
+          m_TargetAssemblyTypeName: TextDisableCtrl, Assembly-CSharp
+          m_MethodName: TextDisable
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
