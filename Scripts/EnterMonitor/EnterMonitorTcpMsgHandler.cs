@@ -8,6 +8,9 @@ public class EnterMonitorTcpMsgHandler : TCPMsgHandler
     public CtrLoadScene CtrLoadScene;
     public CtrBtnsEM CtrBtnsEM;
     public float OverdueTime = 3f;
+    public CtrlScreenCastShow ctrlScreenCastShow;
+    public List<CtrlScreenVideoPlayer> ctrlScreenVideoPlayers;
+    private CtrlScreenVideoPlayer ctrlScreenVideoPlayer;
 
     public override void HandleMsg(string msg)
     {
@@ -34,6 +37,22 @@ public class EnterMonitorTcpMsgHandler : TCPMsgHandler
                 {
                     if (ctrScreen.VId.ToString() == videos[0]) ctrScreen.OnClickScreen(videos[1]);
                 }
+                break;
+            case "play":
+                ctrlScreenCastShow.StartScreen(param);
+                ctrlScreenVideoPlayers.ForEach(item =>
+                {
+                    if (item.gameObject.activeSelf)
+                    {
+                        ctrlScreenVideoPlayer = item;
+                    }
+                });
+                break;
+            case "ScreenCast":
+                ctrlScreenVideoPlayer?.ToggleScreenPlayPause();
+                break;
+            case "close":
+                ctrlScreenCastShow.EndScreenCast();
                 break;
         }
     }

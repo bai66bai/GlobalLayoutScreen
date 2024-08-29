@@ -5,7 +5,9 @@ using UnityEngine;
 public class IdleTcpMsgHandler : TCPMsgHandler
 {
     private LevelLoader levelLoader;
-
+    public CtrlScreenCastShow ctrlScreenCastShow;
+    public List<CtrlScreenVideoPlayer> ctrlScreenVideoPlayers;
+    private CtrlScreenVideoPlayer ctrlScreenVideoPlayer;
     private void Start()
     {
         levelLoader = GetComponent<LevelLoader>();
@@ -24,6 +26,22 @@ public class IdleTcpMsgHandler : TCPMsgHandler
                 break;
             case "sceneName":
                 if (param != "MenuScene") levelLoader.LoadNewScene(param);
+                break;
+            case "play":
+                ctrlScreenCastShow.StartScreen(param);
+                ctrlScreenVideoPlayers.ForEach(item =>
+                {
+                    if (item.gameObject.activeSelf)
+                    {
+                        ctrlScreenVideoPlayer = item;
+                    }
+                });
+                break;
+            case "ScreenCast":
+                ctrlScreenVideoPlayer?.ToggleScreenPlayPause();
+                break;
+            case "close":
+                ctrlScreenCastShow.EndScreenCast();
                 break;
         }
     }
