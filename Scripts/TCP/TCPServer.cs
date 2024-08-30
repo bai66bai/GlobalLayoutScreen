@@ -58,7 +58,9 @@ public class TCPServer : MonoBehaviour
             yield return null;
 
         // ¥Ú∆∆Idle
-        IdleCtrl.BreakIdle();
+        var remoteEndPoint = (IPEndPoint)tcpClient.Client.RemoteEndPoint;
+        if(remoteEndPoint.Address.ToString() == "192.168.5.18")
+            IdleCtrl.BreakIdle();
 
         string request = Encoding.UTF8.GetString(buffer, 0, readTask.Result);
         //Debug.Log("Received: " + request);

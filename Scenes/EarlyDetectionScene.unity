@@ -486,7 +486,7 @@ PrefabInstance:
     - target: {fileID: 4051185573270118842, guid: 338f5ca47cffb5f4fbb250c14b073c34,
         type: 3}
       propertyPath: IdleTime
-      value: 10
+      value: 900
       objectReference: {fileID: 0}
     - target: {fileID: 5468953013710013278, guid: 338f5ca47cffb5f4fbb250c14b073c34,
         type: 3}

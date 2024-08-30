@@ -1,6 +1,7 @@
 
 using System.Collections.Generic;
 using System.Diagnostics;
+using UnityEngine;
 
 public class GlobalTcpMsgHandler : TCPMsgHandler
 {
@@ -9,6 +10,7 @@ public class GlobalTcpMsgHandler : TCPMsgHandler
     public CtrlScreenCastShow ctrlScreenCastShow;
     public List<CtrlScreenVideoPlayer> ctrlScreenVideoPlayers;
     private CtrlScreenVideoPlayer ctrlScreenVideoPlayer;
+    private string keyName = "";
     public override void HandleMsg(string msg)
     {
         var splitedMsg = msg.Split(':');
@@ -31,20 +33,35 @@ public class GlobalTcpMsgHandler : TCPMsgHandler
                 }
                 break;
             case "play":
-                ctrlScreenCastShow.StartScreen(param);
-                ctrlScreenVideoPlayers.ForEach(item =>
+                string[] Content = param.Split('-');
+                if (keyName == "")
                 {
-                    if (item.gameObject.activeSelf)
+                    keyName = Content[1];
+                    ctrlScreenCastShow.StartScreen(Content[0]);
+                    ctrlScreenVideoPlayers.ForEach(item =>
                     {
-                        ctrlScreenVideoPlayer = item;
-                    }
-                });
+                        if (item.gameObject.activeSelf)
+                        {
+                            ctrlScreenVideoPlayer = item;
+                        }
+                    });
+                }
                 break;
             case "ScreenCast":
-                ctrlScreenVideoPlayer?.ToggleScreenPlayPause();
+                string[] Contents = param.Split('-');
+                if (keyName == Contents[1])
+                {
+                    ctrlScreenVideoPlayer?.ToggleScreenPlayPause();
+                }
+
                 break;
             case "close":
-                ctrlScreenCastShow.EndScreenCast();
+                string[] Close = param.Split('-');
+                if (keyName == Close[1])
+                {
+                    ctrlScreenCastShow.EndScreenCast();
+                    keyName = "";
+                }
                 break;
         }
         

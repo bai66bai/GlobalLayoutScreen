@@ -19,8 +19,6 @@ public class CtrlVlcMute : MonoBehaviour
         {
             yield return null; // 每帧等待一次
         }
-
-        Debug.Log(11111);
         // 这里可以添加对 mediaPlayer 的操作，比如静音
         vlcPlayerExample.mediaPlayer.SetVolume(0);
     }
