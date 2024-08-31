@@ -913,7 +913,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   videoPlayer: {fileID: 1233608956}
-  controlButton: {fileID: 1288970468}
+  controlButton: {fileID: 1626605640}
 --- !u!1 &1288970468
 GameObject:
   m_ObjectHideFlags: 0
