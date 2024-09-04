@@ -62,7 +62,10 @@ public class SwipeDetection : MonoBehaviour
         {
             foreach (var vLCPlayerExample in currentVlcCtrl.vLCPlayerExamples)
             {
-                vLCPlayerExample.Pause();
+                if(vLCPlayerExample.mediaPlayer.State == LibVLCSharp.VLCState.Playing)
+                {
+                    vLCPlayerExample.Pause();
+                }
             }
         }
 
@@ -73,7 +76,10 @@ public class SwipeDetection : MonoBehaviour
                 currentVlcCtrl = monitorVlcCtrl;
                 foreach (var vLCPlayerExample in currentVlcCtrl.vLCPlayerExamples)
                 {
-                    vLCPlayerExample.Resume();
+                    if(vLCPlayerExample.mediaPlayer.State == LibVLCSharp.VLCState.Stopped)
+                    {
+                        vLCPlayerExample.Resume();
+                    }
                 }
                 break;
             }

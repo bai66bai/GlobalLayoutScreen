@@ -489,7 +489,7 @@ MonoBehaviour:
   screen: {fileID: 0}
   canvasScreen: {fileID: 938712286513507207}
   texture: {fileID: 0}
-  path: rtsp://hzcctv:1q2w3e4r@10.4.204.72:554/Streaming/Channels/101
+  path: rtsp://hzcctv:1q2w3e4r@10.4.204.72:554/Streaming/Channels/102
   flipTextureX: 1
   flipTextureY: 1
   playOnAwake: 1
@@ -2081,7 +2081,7 @@ MonoBehaviour:
   screen: {fileID: 0}
   canvasScreen: {fileID: 4276216333379274026}
   texture: {fileID: 0}
-  path: rtsp://hzcctv:1q2w3e4r@10.4.213.42:554/Streaming/Channels/101
+  path: rtsp://hzcctv:1q2w3e4r@10.4.213.42:554/Streaming/Channels/102
   flipTextureX: 1
   flipTextureY: 1
   playOnAwake: 1
@@ -3066,7 +3066,7 @@ MonoBehaviour:
   screen: {fileID: 0}
   canvasScreen: {fileID: 7374428338048291196}
   texture: {fileID: 0}
-  path: rtsp://hzcctv:1q2w3e4r@10.4.204.32:554/Streaming/Channels/101
+  path: rtsp://hzcctv:1q2w3e4r@10.4.204.32:554/Streaming/Channels/102
   flipTextureX: 1
   flipTextureY: 1
   playOnAwake: 1
@@ -3237,7 +3237,7 @@ MonoBehaviour:
   screen: {fileID: 0}
   canvasScreen: {fileID: 880788752448809901}
   texture: {fileID: 0}
-  path: rtsp://hzcctv:1q2w3e4r@10.4.204.36:554/Streaming/Channels/101
+  path: rtsp://hzcctv:1q2w3e4r@10.4.204.36:554/Streaming/Channels/102
   flipTextureX: 1
   flipTextureY: 1
   playOnAwake: 1

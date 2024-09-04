@@ -67,7 +67,6 @@ public class TCPServer : MonoBehaviour
        if (request != "break")
          tcpMsgHandler.OnMsg(request);
 
-
         // ·¢ËÍÏìÓ¦
         string response = "Success";
         byte[] responseData = Encoding.UTF8.GetBytes(response);

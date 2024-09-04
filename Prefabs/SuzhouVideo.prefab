@@ -160,7 +160,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 207860286271220802}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a54f68b0283bcfc408393ef8ebab9465, type: 3}
   m_Name: 
@@ -174,7 +174,7 @@ MonoBehaviour:
   flipTextureX: 1
   flipTextureY: 1
   playOnAwake: 1
-  logToConsole: 0
+  logToConsole: 1
   HasDestroyed: 0
 --- !u!114 &7657458767375694886
 MonoBehaviour:
@@ -238,7 +238,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 207860286271220802}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2b923ca10aa453a45ae7064a7ea6f04c, type: 3}
   m_Name: 
@@ -331,7 +331,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 254667548015952278}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a54f68b0283bcfc408393ef8ebab9465, type: 3}
   m_Name: 
@@ -345,7 +345,7 @@ MonoBehaviour:
   flipTextureX: 1
   flipTextureY: 1
   playOnAwake: 1
-  logToConsole: 0
+  logToConsole: 1
   HasDestroyed: 0
 --- !u!114 &2100813341639478321
 MonoBehaviour:
@@ -409,7 +409,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 254667548015952278}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2b923ca10aa453a45ae7064a7ea6f04c, type: 3}
   m_Name: 
@@ -735,7 +735,7 @@ MonoBehaviour:
   flipTextureX: 1
   flipTextureY: 1
   playOnAwake: 1
-  logToConsole: 0
+  logToConsole: 1
   HasDestroyed: 0
 --- !u!114 &7458156258096127807
 MonoBehaviour:
@@ -902,11 +902,11 @@ MonoBehaviour:
   screen: {fileID: 0}
   canvasScreen: {fileID: 1220307459191011011}
   texture: {fileID: 0}
-  path: rtsp://admin:1q2w3e4r$@10.1.42.197:554/LiveMedia/ch1/Media1
+  path: rtsp://admin:HuaWei123@10.1.42.197:554/LiveMedia/ch1/Media1
   flipTextureX: 1
   flipTextureY: 1
   playOnAwake: 1
-  logToConsole: 0
+  logToConsole: 1
   HasDestroyed: 0
 --- !u!114 &8967373816924219541
 MonoBehaviour:
@@ -1033,7 +1033,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1217,7 +1217,7 @@ MonoBehaviour:
   screen: {fileID: 0}
   canvasScreen: {fileID: 8663259515299444741}
   texture: {fileID: 0}
-  path: rtsp://admin:1q2w3e4r$@10.1.43.168:554/LiveMedia/ch1/Media1
+  path: rtsp://admin:HuaWei123@10.1.43.168:554/LiveMedia/ch1/Media1
   flipTextureX: 1
   flipTextureY: 1
   playOnAwake: 1
@@ -1420,7 +1420,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1532,7 +1532,7 @@ MonoBehaviour:
   screen: {fileID: 0}
   canvasScreen: {fileID: 3641053124503891107}
   texture: {fileID: 0}
-  path: rtsp://admin:1q2w3e4r$@10.1.43.62:554/LiveMedia/ch1/Media1
+  path: rtsp://admin:HuaWei123@10.1.43.62:554/LiveMedia/ch1/Media1
   flipTextureX: 1
   flipTextureY: 1
   playOnAwake: 1
@@ -1703,7 +1703,7 @@ MonoBehaviour:
   screen: {fileID: 0}
   canvasScreen: {fileID: 1349795010734204116}
   texture: {fileID: 0}
-  path: rtsp://admin:1q2w3e4r$@10.1.43.147:554/LiveMedia/ch1/Media1
+  path: rtsp://admin:HuaWei123@10.1.43.147:554/LiveMedia/ch1/Media1
   flipTextureX: 1
   flipTextureY: 1
   playOnAwake: 1
@@ -1874,11 +1874,11 @@ MonoBehaviour:
   screen: {fileID: 0}
   canvasScreen: {fileID: 637398281207738391}
   texture: {fileID: 0}
-  path: rtsp://admin:1q2w3e4r$@10.1.42.117:554/LiveMedia/ch1/Media1
+  path: rtsp://admin:HuaWei123@10.1.42.117:554/LiveMedia/ch1/Media1
   flipTextureX: 1
   flipTextureY: 1
   playOnAwake: 1
-  logToConsole: 0
+  logToConsole: 1
   HasDestroyed: 0
 --- !u!114 &7146416466645582816
 MonoBehaviour:
@@ -2371,11 +2371,11 @@ MonoBehaviour:
   screen: {fileID: 0}
   canvasScreen: {fileID: 5166079934655562117}
   texture: {fileID: 0}
-  path: rtsp://admin:1q2w3e4r$@10.1.42.114:554/LiveMedia/ch1/Media1
+  path: rtsp://admin:HuaWei123@10.1.42.114:554/LiveMedia/ch1/Media1
   flipTextureX: 1
   flipTextureY: 1
   playOnAwake: 1
-  logToConsole: 0
+  logToConsole: 1
   HasDestroyed: 0
 --- !u!114 &864915766096698741
 MonoBehaviour:
@@ -2568,7 +2568,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &4990449404380035005
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2576,7 +2576,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5174523942158734924}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2586,11 +2586,11 @@ RectTransform:
   - {fileID: 5204052755447158297}
   - {fileID: 3434785058021028845}
   - {fileID: 2384361005277135219}
-  m_Father: {fileID: 2055283444022003858}
+  m_Father: {fileID: 359553516971207287}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 3953, y: 0}
+  m_AnchoredPosition: {x: 7906, y: 0}
   m_SizeDelta: {x: 3953, y: 1330}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &5333894661710356885
@@ -2730,11 +2730,11 @@ MonoBehaviour:
   screen: {fileID: 0}
   canvasScreen: {fileID: 1756577002578158979}
   texture: {fileID: 0}
-  path: rtsp://admin:1q2w3e4r$@10.1.42.125:554/LiveMedia/ch1/Media1
+  path: rtsp://admin:HuaWei123@10.1.42.125:554/LiveMedia/ch1/Media1
   flipTextureX: 1
   flipTextureY: 1
   playOnAwake: 1
-  logToConsole: 0
+  logToConsole: 1
   HasDestroyed: 0
 --- !u!114 &4480297075657116837
 MonoBehaviour:
@@ -2905,7 +2905,7 @@ MonoBehaviour:
   flipTextureX: 1
   flipTextureY: 1
   playOnAwake: 1
-  logToConsole: 0
+  logToConsole: 1
   HasDestroyed: 0
 --- !u!114 &5189693699135249837
 MonoBehaviour:
@@ -3134,7 +3134,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5675597947779046956}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a54f68b0283bcfc408393ef8ebab9465, type: 3}
   m_Name: 
@@ -3148,7 +3148,7 @@ MonoBehaviour:
   flipTextureX: 1
   flipTextureY: 1
   playOnAwake: 1
-  logToConsole: 0
+  logToConsole: 1
   HasDestroyed: 0
 --- !u!114 &6260978307775870919
 MonoBehaviour:
@@ -3212,7 +3212,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5675597947779046956}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2b923ca10aa453a45ae7064a7ea6f04c, type: 3}
   m_Name: 
@@ -3319,7 +3319,7 @@ MonoBehaviour:
   flipTextureX: 1
   flipTextureY: 1
   playOnAwake: 1
-  logToConsole: 0
+  logToConsole: 1
   HasDestroyed: 0
 --- !u!114 &5954486090051596693
 MonoBehaviour:
@@ -3486,7 +3486,7 @@ MonoBehaviour:
   screen: {fileID: 0}
   canvasScreen: {fileID: 1765111526386812004}
   texture: {fileID: 0}
-  path: rtsp://admin:1q2w3e4r$@10.1.43.99:554/LiveMedia/ch1/Media1
+  path: rtsp://admin:HuaWei123@10.1.43.99:554/LiveMedia/ch1/Media1
   flipTextureX: 1
   flipTextureY: 1
   playOnAwake: 1
@@ -3659,7 +3659,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6208322406046789359}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3673,7 +3673,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -3953, y: 0.0099487}
+  m_AnchoredPosition: {x: -1986.5, y: 0}
   m_SizeDelta: {x: 3953, y: 1330}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &4809908483730163689
@@ -3743,6 +3743,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 4990449404380035005}
   - {fileID: 2055283444022003858}
   - {fileID: 547801630372582344}
   m_Father: {fileID: 0}
@@ -4066,7 +4067,7 @@ MonoBehaviour:
   screen: {fileID: 0}
   canvasScreen: {fileID: 8301745947826444795}
   texture: {fileID: 0}
-  path: rtsp://admin:1q2w3e4r$@10.1.42.109:554/LiveMedia/ch1/Media1
+  path: rtsp://admin:HuaWei123@10.1.42.109:554/LiveMedia/ch1/Media1
   flipTextureX: 1
   flipTextureY: 1
   playOnAwake: 1
@@ -4164,7 +4165,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8483420462233065465}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -4178,7 +4179,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 1966.5, y: -0.0099487305}
   m_SizeDelta: {x: 3953, y: 1330}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &5513368352178650232
@@ -4254,13 +4255,12 @@ RectTransform:
   m_Children:
   - {fileID: 7528688781400991274}
   - {fileID: 4974902406318590522}
-  - {fileID: 4990449404380035005}
   m_Father: {fileID: 359553516971207287}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 3953, y: 0}
-  m_SizeDelta: {x: 11859, y: 1330}
+  m_AnchoredPosition: {x: 1986.5, y: 0.0099335}
+  m_SizeDelta: {x: 7926, y: 1330}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3350259547726047642
 CanvasRenderer:
@@ -4319,7 +4319,6 @@ MonoBehaviour:
   MonitorVlcCtrls:
   - {fileID: 6700295048732488671}
   - {fileID: 7998017378762212061}
-  - {fileID: 9012295418964431449}
   bigIndex: 0
   nowIndex: 0
 --- !u!114 &4508993248474123917
@@ -4522,7 +4521,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

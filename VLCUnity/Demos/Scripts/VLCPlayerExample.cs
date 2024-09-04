@@ -214,7 +214,7 @@ public class VLCPlayerExample : MonoBehaviour
         {
             ReleaseCache();
             // 重新加载媒体以确保缓存被清空
-            mediaPlayer.Media.AddOption(":network-caching=3000");
+            mediaPlayer.Media.AddOption(":network-caching=6000");
             mediaPlayer.Play();
         }
     }
