@@ -33,13 +33,12 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8199164946209956419}
-  - {fileID: 2321880880636974818}
   m_Father: {fileID: 4118531569001412386}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1976.5, y: 0}
-  m_SizeDelta: {x: 7906, y: 1330}
+  m_AnchoredPosition: {x: 0, y: 0.0099487}
+  m_SizeDelta: {x: 3953, y: 1330}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1522582984455152921
 CanvasRenderer:
@@ -97,7 +96,6 @@ MonoBehaviour:
   Turnthepage: {fileID: 4047145143501507600}
   MonitorVlcCtrls:
   - {fileID: 6603287599391365083}
-  - {fileID: 1546811375111569188}
   bigIndex: 0
   nowIndex: 0
 --- !u!114 &7350683297896491264
@@ -1100,7 +1098,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2321880880636974818
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1118,11 +1116,11 @@ RectTransform:
   - {fileID: 634238374730501797}
   - {fileID: 2181085213849614254}
   - {fileID: 5715493333426670371}
-  m_Father: {fileID: 4636186883293090535}
+  m_Father: {fileID: 4118531569001412386}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1976.5, y: 0}
+  m_AnchoredPosition: {x: 3953, y: 0}
   m_SizeDelta: {x: 3953, y: 1330}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &5805611651868220644
@@ -1476,7 +1474,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1976.5, y: 0.0099487}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 3953, y: 1330}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &7504174085096238945
@@ -2959,6 +2957,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 2321880880636974818}
   - {fileID: 4636186883293090535}
   - {fileID: 7460885265534989312}
   m_Father: {fileID: 0}

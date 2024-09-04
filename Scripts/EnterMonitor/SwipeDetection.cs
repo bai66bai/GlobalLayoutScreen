@@ -71,18 +71,27 @@ public class SwipeDetection : MonoBehaviour
 
         foreach (var monitorVlcCtrl in MonitorVlcCtrls)
         {
-            if(nowIndex == monitorVlcCtrl.index)
+            try
             {
-                currentVlcCtrl = monitorVlcCtrl;
-                foreach (var vLCPlayerExample in currentVlcCtrl.vLCPlayerExamples)
+                if (nowIndex == monitorVlcCtrl.index)
                 {
-                    if(vLCPlayerExample.mediaPlayer.State == LibVLCSharp.VLCState.Stopped)
+                    currentVlcCtrl = monitorVlcCtrl;
+                    foreach (var vLCPlayerExample in currentVlcCtrl.vLCPlayerExamples)
                     {
-                        vLCPlayerExample.Resume();
+                        if (vLCPlayerExample.mediaPlayer.State == LibVLCSharp.VLCState.Stopped)
+                        {
+                            vLCPlayerExample.Resume();
+
+                        }
                     }
+                    break;
                 }
-                break;
             }
+            catch (System.Exception ex)
+            {
+                Debug.LogException(ex);
+            }
+           
         }
     }
 

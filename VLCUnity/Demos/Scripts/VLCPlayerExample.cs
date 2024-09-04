@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using System.Collections.Generic;
 using System.Collections;
 using System.Linq;
+using System.IO;
 
 ///This is a basic implementation of a media player using VLC for Unity using LibVLCSharp
 ///It exposes some basic playback controls, you may wish to add more of these
@@ -18,6 +19,30 @@ using System.Linq;
 
 public class VLCPlayerExample : MonoBehaviour
 {
+    private string filePath;
+
+    void Start()
+    {
+        // 设置文件路径
+        filePath = Path.Combine(Application.persistentDataPath, "log.txt");
+    }
+
+
+    public void AppendTextToFile(string content)
+    {
+        try
+        {
+            using (StreamWriter writer = new StreamWriter(filePath, true))
+            {
+                writer.WriteLine(content);
+            }
+            Debug.Log("成功写入内容到文件");
+        }
+        catch (Exception ex)
+        {
+            Debug.LogError("写入文件时发生错误: " + ex.Message);
+        }
+    }
     public static LibVLC libVLC; //The LibVLC class is mainly used for making MediaPlayer and Media objects. You should only have one LibVLC instance.
     public MediaPlayer mediaPlayer; //MediaPlayer is the main class we use to interact with VLC
     public bool isNeedAwakeLoad = true;
@@ -63,6 +88,7 @@ public class VLCPlayerExample : MonoBehaviour
         if (isNeedAwakeLoad)
             StartCoroutine(StartVideo());
     }
+
 
 
     public void StartVideoWithUrlAsync(string url) => StartCoroutine(StartVideoWithUrl(url));
