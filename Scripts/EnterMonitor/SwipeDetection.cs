@@ -80,7 +80,7 @@ public class SwipeDetection : MonoBehaviour
                     {
                         if (vLCPlayerExample.mediaPlayer.State == LibVLCSharp.VLCState.Stopped)
                         {
-                            vLCPlayerExample.Play();
+                            vLCPlayerExample.Resume();
 
                         }
                     }
