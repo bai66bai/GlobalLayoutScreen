@@ -14,6 +14,7 @@ public class TestVlc : MonoBehaviour
     void Start()
     {
         vLCPlayerExample = GetComponent<VLCPlayerExample>();
+        vLCPlayerExample.Stop();
     }
 
     void Update()
@@ -28,14 +29,14 @@ public class TestVlc : MonoBehaviour
 
         if(count > 5000 && !isPause)
         {
-            vLCPlayerExample.Pause();
+            vLCPlayerExample.Stop();
             isPause = true;
             Debug.Log(2);
         }
 
         if(count > 7500 && !isSecondPlay)
         {
-            vLCPlayerExample.Resume();
+            vLCPlayerExample.Play();
             isSecondPlay = true;
             Debug.Log(3);
         }

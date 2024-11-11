@@ -1,6 +1,7 @@
 using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Video;
@@ -11,6 +12,7 @@ public class CtrVideo : MonoBehaviour
     public VideoPlayer videoPlayer;
     public string nextSceneName;
     public GameObject GameObject;
+    public List<TextMeshProUGUI> textMeshProUGUIs;
 
     void Start()
     {
@@ -26,8 +28,17 @@ public class CtrVideo : MonoBehaviour
 
     }
 
+    private void CtrlDisapper()
+    {
+        textMeshProUGUIs.ForEach(u =>
+        {
+            u.enabled = false;
+        });
+    }
+
       public void OnLodeScene()
         {
+        CtrlDisapper();
         GameObject.SetActive(true);
     }
     void OnVideoFinished(VideoPlayer vp)

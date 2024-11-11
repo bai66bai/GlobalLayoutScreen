@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7122051751217491005}
   - component: {fileID: 4051185573270118842}
+  - component: {fileID: 841404452466666225}
   m_Layer: 0
   m_Name: IdleVideo
   m_TagString: Untagged
@@ -49,5 +50,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IdleTime: 900
+  StreamVideoPlayer: {fileID: 841404452466666225}
   VlcPrefab: {fileID: 8595790096796978930, guid: 3bd0a7adc6dbcbe43a02213067def86d,
     type: 3}
+--- !u!114 &841404452466666225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5468953013710013278}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adffa4131eb2cba4199fef2b1fde9976, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  VideoPlayer: {fileID: 0}
+  VideoName: 

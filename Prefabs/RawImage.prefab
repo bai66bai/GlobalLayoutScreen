@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6287436413535150623}
   - component: {fileID: 3605620498110564785}
   - component: {fileID: 329357692071516420}
+  - component: {fileID: 3104969751649659494}
   m_Layer: 5
   m_Name: RawImage
   m_TagString: Untagged
@@ -85,7 +86,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a54f68b0283bcfc408393ef8ebab9465, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isNeedAwakeStart: 0
   screen: {fileID: 0}
   canvasScreen: {fileID: 3605620498110564785}
   texture: {fileID: 0}
@@ -94,4 +94,16 @@ MonoBehaviour:
   flipTextureY: 1
   playOnAwake: 1
   logToConsole: 0
-  HasDestroyed: 0
+--- !u!114 &3104969751649659494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8595790096796978930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 405f8a38b6659bf49ab45e96f45f9d23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vlcPlayerExample: {fileID: 329357692071516420}

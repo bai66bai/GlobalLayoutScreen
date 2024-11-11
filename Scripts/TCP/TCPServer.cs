@@ -2,8 +2,8 @@ using System.Collections;
 using System.Net;
 using System.Net.Sockets;
 using System.Text;
-using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TCPServer : MonoBehaviour
 {
@@ -58,13 +58,16 @@ public class TCPServer : MonoBehaviour
             yield return null;
 
         // ¥Ú∆∆Idle
-        IdleCtrl.BreakIdle();
+        var remoteEndPoint = (IPEndPoint)tcpClient.Client.RemoteEndPoint;
+        if(remoteEndPoint.Address.ToString() != "192.168.5.19" && remoteEndPoint.Address.ToString() != "192.168.5.20")
+            IdleCtrl.BreakIdle();
 
         string request = Encoding.UTF8.GetString(buffer, 0, readTask.Result);
         //Debug.Log("Received: " + request);
-       if (request != "break")
-         tcpMsgHandler.OnMsg(request);
-
+        if (request != "break")
+            tcpMsgHandler.OnMsg(request);
+        else if(SceneManager.GetActiveScene().name == "IdleScene")
+            GetComponent<LevelLoader>().LoadNewScene("MenuScene");
 
         // ∑¢ÀÕœÏ”¶
         string response = "Success";

@@ -9,8 +9,6 @@ public class SwipeDetection : MonoBehaviour
     public float duration = 0.5f;
     public int MovingDistance = 1920;
 
-    public Turnthepage Turnthepage;
-
     public List<MonitorVlcCtrl> MonitorVlcCtrls;
 
     private MonitorVlcCtrl currentVlcCtrl;
@@ -24,18 +22,22 @@ public class SwipeDetection : MonoBehaviour
     {
         float width = swipeArea.rect.width;
         bigIndex = (int)width / MovingDistance;
+        currentVlcCtrl = MonitorVlcCtrls[0];
     }
 
 
     public void ToRight()
     {
+        Debug.Log($"nowIndex: {nowIndex}");
+
+        Debug.Log(isFinish);
+
         if (nowIndex > 0 && isFinish)
         {
             Vector3 localPostion = transform.localPosition;
-            Vector3 targetLocalPosition = new Vector3(localPostion.x + MovingDistance, localPostion.y, localPostion.z);
+            Vector3 targetLocalPosition = new(localPostion.x + MovingDistance, localPostion.y, localPostion.z);
             StartCoroutine(MoveAndScaleOverTime(targetLocalPosition, duration));
             --nowIndex;
-            Turnthepage.ChangeBtnColor(nowIndex);
             isFinish = false;
             CtrlVideoPauseAndPlay();
         }
@@ -44,13 +46,17 @@ public class SwipeDetection : MonoBehaviour
 
     public void ToLeft()
     {
+        Debug.Log($"nowIndex: {nowIndex}");
+        Debug.Log($"bigIndex-1: {bigIndex-1}");
+        Debug.Log(isFinish);
         if (nowIndex < bigIndex - 1 && isFinish)
         {
+            Debug.Log(0);
+
             Vector3 localPostion = transform.localPosition;
             Vector3 targetLocalPosition = new Vector3(localPostion.x - MovingDistance, localPostion.y, localPostion.z);
             StartCoroutine(MoveAndScaleOverTime(targetLocalPosition, duration));
             ++nowIndex;
-            Turnthepage.ChangeBtnColor(nowIndex);
             isFinish = false;
             CtrlVideoPauseAndPlay();
         }
@@ -62,21 +68,29 @@ public class SwipeDetection : MonoBehaviour
         {
             foreach (var vLCPlayerExample in currentVlcCtrl.vLCPlayerExamples)
             {
-                vLCPlayerExample.Pause();
+                vLCPlayerExample.Stop();
             }
         }
 
         foreach (var monitorVlcCtrl in MonitorVlcCtrls)
         {
-            if(nowIndex == monitorVlcCtrl.index)
+            try
             {
-                currentVlcCtrl = monitorVlcCtrl;
-                foreach (var vLCPlayerExample in currentVlcCtrl.vLCPlayerExamples)
+                if (nowIndex == monitorVlcCtrl.index)
                 {
-                    vLCPlayerExample.Resume();
+                    currentVlcCtrl = monitorVlcCtrl;
+                    foreach (var vLCPlayerExample in currentVlcCtrl.vLCPlayerExamples)
+                    {
+                        vLCPlayerExample.Play();
+                    }
+                    break;
                 }
-                break;
             }
+            catch (System.Exception ex)
+            {
+                Debug.LogException(ex);
+            }
+           
         }
     }
 

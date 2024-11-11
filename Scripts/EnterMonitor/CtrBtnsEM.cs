@@ -65,35 +65,6 @@ public class CtrBtnsEM : MonoBehaviour
         });
     }
 
-
-    void Update()
-    {
- 
-        if (IsReleasingHangZhou || IsReleasingSuZhou)
-        {
-            bool hasAllVlcReleased = true;
-            foreach (Transform child in IsReleasingSuZhou ? Suzhou.transform : Hangzhou.transform)
-            {
-                VLCPlayerExample[] vLCPlayerExamples = child.gameObject.GetComponentsInChildren<VLCPlayerExample>();
-                foreach (var item in vLCPlayerExamples)
-                {
-                    if(!item.HasDestroyed)
-                    {
-                        hasAllVlcReleased = false;
-                        break;
-                    }
-                }                
-
-                if(hasAllVlcReleased)
-                {
-                    Destroy(child.gameObject);
-                    IsReleasingHangZhou = false;
-                    IsReleasingSuZhou = false;
-                }
-            }
-        }
-    }
-
     private void changeContent(int index)
     {
         if (index == 0)
@@ -102,7 +73,11 @@ public class CtrBtnsEM : MonoBehaviour
             VLCPlayerExample[] vLCPlayer1Examples = Hangzhou.GetComponentsInChildren<VLCPlayerExample>();
             foreach (var item in vLCPlayer1Examples)
             {
-                item.DestoryVLCPlayer();
+                item.DestroyMediaPlayer();
+            }
+            foreach (Transform childTransform in Hangzhou.transform)
+            {
+                Destroy(childTransform.gameObject);
             }
             Contents[0].SetActive(true);
             Suzhou.GetComponent<CtrVideoPrefab>().LoadPrefabSync();
@@ -115,7 +90,11 @@ public class CtrBtnsEM : MonoBehaviour
             VLCPlayerExample[] vLCPlayer1Examples = Suzhou.GetComponentsInChildren<VLCPlayerExample>();
             foreach (var item in vLCPlayer1Examples)
             {
-                item.DestoryVLCPlayer();
+                item.DestroyMediaPlayer();
+            }
+            foreach (Transform childTransform in Suzhou.transform)
+            {
+                Destroy(childTransform.gameObject);
             }
             Contents[1].SetActive(true);
            Hangzhou.GetComponent<CtrVideoPrefab>().LoadPrefabSync();

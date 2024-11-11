@@ -13,7 +13,7 @@ public class DistroyVideo : MonoBehaviour
             VLCPlayerExample[] VLCPlayerExamples = item.GetComponentsInChildren<VLCPlayerExample>();
             foreach (var player in VLCPlayerExamples)
             {
-                player.DestoryVLCPlayer();
+                player.DestroyMediaPlayer();
             }
         }
     }

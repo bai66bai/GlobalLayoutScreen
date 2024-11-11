@@ -17,6 +17,9 @@ public  class TCPMsgHandler : MonoBehaviour
         {
             levelLoader.LoadNewScene(splitMsg[1]);
             return;
+        }else if(splitMsg[0] == "loadSceneNoAnimation")
+        {
+            levelLoader.LoadSceneNoAnimation(splitMsg[1]);
         }
         HandleMsg(msg);
     }

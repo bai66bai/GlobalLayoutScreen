@@ -8,6 +8,10 @@ public class EnterMonitorTcpMsgHandler : TCPMsgHandler
     public CtrLoadScene CtrLoadScene;
     public CtrBtnsEM CtrBtnsEM;
     public float OverdueTime = 3f;
+    public CtrlScreenCastShow ctrlScreenCastShow;
+    public List<CtrlScreenVideoPlayer> ctrlScreenVideoPlayers;
+    private CtrlScreenVideoPlayer ctrlScreenVideoPlayer;
+    private string keyName = "";
 
     public override void HandleMsg(string msg)
     {
@@ -21,6 +25,7 @@ public class EnterMonitorTcpMsgHandler : TCPMsgHandler
                 break;
             case "scroll":
                 SwipeDetection swipeDetection = FindObjectOfType<SwipeDetection>();
+                Debug.Log(swipeDetection);
                 (param == "left" ? new Action(swipeDetection.ToLeft) : new Action(swipeDetection.ToRight))();
                 break;
             case "sceneName":
@@ -33,6 +38,37 @@ public class EnterMonitorTcpMsgHandler : TCPMsgHandler
                 foreach (var ctrScreen in ctrScreens)
                 {
                     if (ctrScreen.VId.ToString() == videos[0]) ctrScreen.OnClickScreen(videos[1]);
+                }
+                break;
+            case "play":
+                string[] Content = param.Split('-');
+                if (keyName == "")
+                {                
+                    keyName = Content[1];
+                    ctrlScreenCastShow.StartScreen(Content[0]);
+                                ctrlScreenVideoPlayers.ForEach(item =>
+                                {
+                                    if (item.gameObject.activeSelf)
+                                    {
+                                        ctrlScreenVideoPlayer = item;
+                                    }
+                                });
+                }  
+                break;
+            case "ScreenCast":
+                string[] Contents = param.Split('-');
+                if (keyName == Contents[1])
+                {
+                    ctrlScreenVideoPlayer?.ToggleScreenPlayPause();
+                }
+                
+                break;
+            case "close":
+                string[] Close = param.Split('-');
+                if(keyName == Close[1])
+                {
+                    ctrlScreenCastShow.EndScreenCast();
+                    keyName = "";
                 }
                 break;
         }

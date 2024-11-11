@@ -140,7 +140,6 @@ public class VLCPlayerExampleGui : MonoBehaviour
 		volumeBar.value = vlcPlayer.Volume;
 		volumeBar.onValueChanged.AddListener((data) => { vlcPlayer.SetVolume((int)volumeBar.value);	});
 		volumeBar.gameObject.SetActive(false);
-
 	}
 
 	void Update()

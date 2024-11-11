@@ -1,3 +1,4 @@
+using LibVLCSharp;
 using System.Collections;
 using System.IO;
 using UnityEngine;
@@ -8,13 +9,15 @@ public class IdleCtrl : MonoBehaviour
 {
     //public VideoClip IdleVideo;  // 公共变量，用于在Inspector中设置视频剪辑
     public float IdleTime = 900f;
-
+    public StreamVideoPlayer StreamVideoPlayer;
     public GameObject VlcPrefab;
     private static GameObject VideoObj;
     private VLCPlayerExample vLCPlayerExample;  // 视频播放器组件的引用
     private static float baseTime = 0f;
     private static bool shouldDestory = false;
     private string IdleVideourl;
+
+    private bool isStop = false;
 
     void Start()
     {
@@ -44,20 +47,29 @@ public class IdleCtrl : MonoBehaviour
         {
             // 第一次播放
             VideoObj.SetActive(true);
-            StartCoroutine(ReadFile());
+            //StartCoroutine(ReadFile());
+            StreamVideoPlayer.VideoFile("global.mp4", vLCPlayerExample,null);
         } else if(VideoObj == null && SceneManager.GetActiveScene().name != "IdleScene")
         {
             InitVideo();
         }
 
         if (vLCPlayerExample != null
-            && vLCPlayerExample.mediaPlayer != null
-            && vLCPlayerExample.mediaPlayer.Time > vLCPlayerExample.mediaPlayer.Length - 1)
+            && vLCPlayerExample.mediaPlayer != null)
         {
-            vLCPlayerExample.mediaPlayer.SetTime(0);
+
+            if (vLCPlayerExample.mediaPlayer.State == VLCState.Stopping && !isStop)
+            {
+                isStop = true;
+                vLCPlayerExample.Play();
+            }
+            else
+            {
+                isStop = false;
+            }
         }
 
-        if(shouldDestory)
+        if (shouldDestory)
         {
             vLCPlayerExample.DestroyMediaPlayer();
             Destroy(VideoObj);
@@ -85,6 +97,8 @@ public class IdleCtrl : MonoBehaviour
         if (www.result == UnityWebRequest.Result.Success)
         {
             IdleVideourl = filePath;
+            vLCPlayerExample.path = filePath;
+            Debug.Log(0);
             // 设置VideoPlayer的视频剪辑
             vLCPlayerExample.StartVideoWithUrlAsync(IdleVideourl);
         }
